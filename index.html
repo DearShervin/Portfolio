@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shervin Iranaghideh</title>
+</head>
+<body>
+  <div id="loader">
+    <h1>0%</h1>
+  </div>
+
+    <menu class="menu">
+    
+        <button class="menu__item active" onclick="openPage(event, 'home')" style="--bgColorItem: #ff8c00;" >
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"/>
+<path d="M9 22V12h6v10M2 10.6L12 2l10 8.6"/>
+          </svg>
+        </button>
+    
+        <button class="menu__item" onclick="openPage(event, 'about')" style="--bgColorItem: #068FFF;">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+    
+        <button class="menu__item" onclick="openPage(event, 'research')" style="--bgColorItem: #4343f5;" >
+          <svg class="icon" viewBox="0 0 24 24">
+            <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
+            <line x1="3" y1="22" x2="21" y2="22"></line>
+            </svg>
+        </button>
+    
+        <button class="menu__item" onclick="openPage(event, 'courses')" style="--bgColorItem: #e0b115;" > 
+          <svg class="icon" viewBox="0 0 24 24" >
+            <line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+        </button>
+    
+        <button class="menu__item" onclick="openPage(event, 'contact')" style="--bgColorItem:#65ddb7;" id="contact__menu-button">
+          <svg class="icon" viewBox="0 0 24 24" >
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+    
+        <div class="menu__border"></div>
+    
+      </menu>
+      <div class="svg-container">
+        <svg viewBox="0 0 202.9 45.5" >
+          <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+            <path  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+              c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+              c9.2,3.6,17.6,4.2,23.3,4H6.7z"/>
+          </clipPath>
+        </svg>
+      </div>
+<!-- 
+      <header class="header" id="hear">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Shervin</a>
+        </nav>
+      </header>
+       -->
+       <main class="main">
+        <section class="home section page" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                  <div class="home__img">
+                    <img src="./assets/IMG_20230620_024458-edit.jpg" alt="" class="home__img">
+                </div>
+                    <div class="home__social">
+                        <a href="" class="home__social-link">
+                          <i class="bx bxl-gmail"></i>
+                        </a>
+                        <a href="https://github.com/DearShervin" class="home__social-link" target="_blank">
+                            <i class="bx bxl-github"></i>
+                          </a>
+                          <a href="https://join.skype.com/invite/oX4tYsNBJz7b" class="home__social-link" target="_blank">
+                              <i class="bx bxl-skype"></i>
+                            </a>
+                            <a href="https://wa.me/989924854298" class="home__social-link">
+                                <i class="bx bxl-whatsapp"></i>
+                            </a>
+                            <a href="https://twitter.com/PetersonShervin" class="home__social-link" target="_blank">
+                              <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="https://t.me/DearShervin" class="home__social-link" target="_blank">
+                                <i class="bx bxl-telegram"></i>
+                          </a>
+                    </div>
+                    
+                    <div class="home__data">
+                        <h3 class="home__subtitle">Welcome, I'm</h3>
+                        <h1 class="home__title">Shervin Iranaghideh</h1>
+                        <h2 class="home__subtitle">Prospective Master's Student</h2>
+                        <p class="home__description">I'm looking for research positions
+                             in the fields of Artificial Intelligence, Machine Learning, 
+                             Deep Learning and Computer Vision</p>
+                        <a href="#contact" class="button button--flex" id="contact__button">
+                            Contact Me <i class="fi fi-rr-phone-call button__icon"></i></a>
+                        <!-- <a href="#about" class="button button--flex">About Me</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="about section page" id="about">
+            <h2 class="section__title">About</h2>
+            <span class="section__subtitle">Get to Know Me</span>
+
+            <div class="about__container container grid">
+              <div class="about__data">
+                <p class="about__description">
+                  <span class="my__story"><i class="fi fi-rr-mug-hot-alt"></i> Story <br></span>
+                  My name is Shervin Iranaghideh, I also go by DearShervin on the
+                  internet, I'm currently a senior Computer Science student, 
+                  I love coding and learning new things and let's say I love making something from nothing. 
+                  I'm also a meticulous person and details catch my eyes.
+                </p>
+                <div class="about__description">
+                <span class="my__skills"><i class="fi fi-rr-square-code"></i> Skills</span>
+                <div class="app">
+                  <!-- <header>
+                    <h1>My Skills</h1>
+                  </header> -->
+                  <div class="tag-list">
+                    <div class="loop-slider" style="--duration:15951ms; --direction:normal;">
+                      <div class="inner">
+                        <div class="tag"><span>#</span> Python</div>
+                        <div class="tag"><span>#</span> Tensorflow</div>
+                        <div class="tag"><span>#</span> Scikit_Learn</div>
+                        <div class="tag"><span>#</span> MATLAB</div>
+                        <div class="tag"><span>#</span> Pandas</div>
+                        <!-- duplicated content -->
+                        <div class="tag"><span>#</span> Python</div>
+                        <div class="tag"><span>#</span> Tensorflow</div>
+                        <div class="tag"><span>#</span> Scikit_Learn</div>
+                        <div class="tag"><span>#</span> MATLAB</div>
+                        <div class="tag"><span>#</span> Pandas</div>
+                      </div>
+                    </div>
+                    <div class="loop-slider" style="--duration:19260ms; --direction:reverse;">
+                      <div class="inner">
+                        <div class="tag"><span>#</span> Numpy</div>
+                        <div class="tag"><span>#</span> HTML/CSS</div>
+                        <div class="tag"><span>#</span> JavaScript</div>
+                        <div class="tag"><span>#</span> Go</div>
+                        <div class="tag"><span>#</span> Git</div>
+                        <!-- duplicated content -->
+                        <div class="tag"><span>#</span> Numpy</div>
+                        <div class="tag"><span>#</span> HTML/CSS</div>
+                        <div class="tag"><span>#</span> JavaScript</div>
+                        <div class="tag"><span>#</span> Go</div>
+                        <div class="tag"><span>#</span> Git</div>
+                      </div>
+                    </div>
+                    <div class="fade"></div>
+                  </div>
+                </div>
+                <h3 class="section__subtitle">I also designed and coded this website</h3>
+              </div>
+                <!-- <p class="about__description">
+                  <span class="my__skills">Skills <i class='bx bx-code-curly' ></i></span><br><br>
+                  Python, Tensorflow,
+                  Scikit-Learn, Numpy, Pandas, Matplotlib, MATLAB, JavaScript, HTML, CSS, Go, Git
+                </p> -->
+                <div class="about__info">
+                  <div>
+                    <span class="about__info-title">Education<br></span>
+                    <span class="about__info-name">Computer Science</span>
+                  </div>
+
+                  <div>
+                    <span class="about__info-title">Date of Birth<br></span>
+                    <span class="about__info-name">July 29, 2002</span>
+                  </div>
+
+                  <div>
+                    <span class="about__info-title">Residence<br></span>
+                    <span class="about__info-name">Tehran, Iran</span>
+                  </div>
+                </div>
+                <div class="about__buttons">
+                  <a download="" href="./pdf/" class="button button--flex">
+                    Download CV<i class="fi fi-rr-file-pdf button__icon"></i>
+                  </a>
+                </div>
+              </div>  
+            </div>
+        </section>
+        <section class="contact section page" id="contact">
+          <h2 class="section__title">Contact Me</h2>
+          <span class="section__subtitle">Get in Touch</span>
+          <div class="contact__container container grid">
+            <div>
+              <div class="contact__information">
+
+                <i class="fi fi-rr-phone-call contact__icon"></i>
+
+                <div>
+
+                  <h3 class="contact__title">Call Me</h3>
+                  <span class="contact__subtitle">(+98) 993-8064-299</span>
+
+                </div>
+              </div>
+
+              <div class="contact__information">
+
+                <i class="fi fi-rr-envelope contact__icon"></i>
+                
+                <div>
+                  
+                  <h3 class="contact__title">Email</h3>
+                  <span class="contact__subtitle">sherviniranaghideh@gmail.com</span>
+
+                </div>
+              </div>
+
+              <div class="contact__information">
+
+                <i class="fi fi-rr-marker contact__icon"></i>
+
+                <div>
+
+                  <h3 class="contact__title">Location</h3>
+                  <span class="contact__subtitle">Tehran - Iran</span>
+
+                </div>
+              </div>
+
+            </div>
+
+            <form action="" class="contact__form grid" id="contact-form">
+              <div class="contact__input grid">
+                <div class="contact__content">
+                  <label for="" class="contact__label">Name</label>
+                  <input type="text" name="name" id="contact__name" class="contact__input">
+                </div>
+                <div class="contact__content">
+                  <label for="" class="contact__label">Email</label>
+                  <input type="email" name="email" id="contact__email" class="contact__input">
+                </div>
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea name="message" id="contact__message" cols="0" rows="7" class="contact__input"></textarea>
+              </div>
+              <div>
+                <a href="#" type="submit" class="button button--flex" id="submit-button" onclick="sendEmail()">
+                  Send Message
+                  <i class="fi fi-rr-paper-plane-top button__icon"></i>
+                </a>
+              </div>
+            </form>
+            <p class="copy">Copyright &#169; Shervin Iranaghideh. All Rights Reserved.</p>
+          </div>
+        </section>
+
+        <section class="research section page" id="research">
+
+          <h2 class="section__subtitle">Teaching and Research</h2>
+          <h1 class="section__title">Experience</h1>
+
+          <div class="research__container container">
+            <h1 class="research__title"><i class="fi fi-rr-chalkboard-user"></i> Teaching Assistant</h1>
+            <ul>
+              <li class="list__items">
+                <div><i class="fi fi-rr-arrow-small-right"></i> Theory of Computation Teaching Assistant under instruction of 
+                  <a href="https://scholar.google.com/citations?user=mpbXVNoAAAAJ&hl=en" target="_blank" class="professor">Dr. Somayeh Khalashi 
+                    <i class="fi fi-rr-arrow-up-right-from-square"></i></a> (Spring 2023)
+                    running lab sessions, answering students' questions and grading assignments.
+                </div>
+              </li>
+              <li class="list__items"><i class="fi fi-rr-arrow-small-right"></i> Linear Optimization Teaching Assistant under instruction of 
+                <a href="https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en" target="_blank">Dr. Farhad Hosseinzadeh Lotfi <i class="fi fi-rr-arrow-up-right-from-square"></i></a> (Fall 2023)</li>
+            </ul>
+            <h1 class="research__title"><i class="fi fi-rr-microscope"></i> Research Experience</h1>
+            <ul>
+              <div class="research__download-pdf">
+              <li class="list__items">
+                <i class="fi fi-rr-arrow-small-right"></i> Multi-commodity transportation problems, mathematical modeling of 
+                these problems and using Python Scipy for solving them.</li>
+                <a download="" href="./assets/Solving Multi-Commodity Transportation Problems Using Python scipy.pdf" class="button button--flex transportation__pdf">
+                  <span class="transportation__pdf-txt">Download</span><i class="fi fi-rr-file-pdf button__icon"></i>
+                </a>
+              </div>
+              <li class="list__items"><i class="fi fi-rr-arrow-small-right"></i>I'm currently doing research on Energy of Graphs under instruction of 
+                <a href="https://scholar.google.com/citations?user=mpbXVNoAAAAJ&hl=en" target="_blank" class="professor">
+                  Dr. Somayeh Khalashi <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                </a></li>
+            </ul>
+          </div>
+
+          <div class="research__interests container">
+            <h1 class="section__title"><i class="fi fi-rr-search-alt"></i> Research Interests</h1>
+            <ul class="interests__list">
+              <li><i class="fi fi-rr-checkbox"></i> AI</li>
+              <li><i class="fi fi-rr-checkbox"></i> Machine Learning</li>
+              <li><i class="fi fi-rr-checkbox"></i> Deep Learning</li>
+              <li><i class="fi fi-rr-checkbox"></i> Computer Vision</li>
+              <li><i class="fi fi-rr-checkbox"></i> NLP</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="courses section page" id="courses">
+          <h1 class="subject__container-title section__title">Courses</h1>
+          <h2 class="subject__container-subtitle section__subtitle">With High Score</h2>
+          <div class="subject__container">
+            <div class="__subject">
+              <h1 class="subject__title"><i class="fi fi-rr-book"></i> Linear Optimization</h1>
+              <ul>
+                <li><i class="fi fi-sr-angle-small-right"></i>Geometric Solution for LPs</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Convex Analysis and Polyhedral Sets</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Simplex Method</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Starting Solution and Convergence:<br><i class="fi fi-rr-arrow-small-right"></i>The Two-Phase Method 
+                <i class="fi fi-rr-arrow-small-right"></i>The Big-M Method</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Duality and Sensitivity Analysis</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Dual-Simplex Method</li>
+              </ul>
+            </div>
+            <div class="__subject">
+              <h1 class="subject__title"><i class="fi fi-rr-book"></i> Numeric Linear Algebra</h1>
+              <ul>
+                <li><i class="fi fi-sr-angle-small-right"></i>Fundamentals of Matrix</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Direct Methods for Linear Systems :<br><i class="fi fi-rr-arrow-small-right"></i>
+                  Gauss-Jordan Elimination<i class="fi fi-rr-arrow-small-right"></i>Crammer's Method<i class="fi fi-rr-arrow-small-right"></i>
+                  LU Decomposition (Crout and Doolittle)<i class="fi fi-rr-arrow-small-right"></i>LDV<i class="fi fi-rr-arrow-small-right"></i>
+                  Cholesky Factorization<i class="fi fi-rr-arrow-small-right"></i>
+                  The QR Factorization (Householder and Givens Methods)
+                </li>
+
+                <li><i class="fi fi-sr-angle-small-right"></i>Iterative Methods for Linear Systems :<br><i class="fi fi-rr-arrow-small-right"></i>
+                  Jacobi Method<i class="fi fi-rr-arrow-small-right"></i>Gauss-Seidel Method<i class="fi fi-rr-arrow-small-right"></i>
+                  SOR
+                </li>
+
+              </ul>
+            </div>
+            <div class="__subject">
+              <h1 class="subject__title"><i class="fi fi-rr-book"></i> Probability</h1>
+              <ul>
+                <li><i class="fi fi-sr-angle-small-right"></i>Descriptive Statistics</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Elementary Probability</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Discrete Probability Distributions</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Continuous Probability Distributions</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Multivariate Probability Distributions</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Hypotheses Tests in Linear Regression</li>
+              </ul>
+            </div>
+            <div class="__subject">
+              <h1 class="subject__title"><i class="fi fi-rr-book"></i> Machine Learning</h1>
+
+              <ul>
+                <li><i class="fi fi-sr-angle-small-right"></i>Basics of Numpy, Matplotlib, Pandas and Scikit-Learn.</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Supervised Learning :<br><i class="fi fi-rr-arrow-small-right"></i>
+                  Regression<i class="fi fi-rr-arrow-small-right"></i>
+                  Classification(K-nearest neighbors (KNN) - Decision trees)
+                </li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Unsupervised Learning :<br><i class="fi fi-rr-arrow-small-right"></i>
+                  Clustering (K-means - Hierarchical Clustering).
+                </li>
+                <li>This course had both math and coding assignments, for coding assignments check my 
+                  <a href="https://github.com/DearShervin/ML_Course_Assignments" target="_blank">Github<i class="fi fi-rr-arrow-up-right-from-square"></i></a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="__subject">
+              <h1 class="subject__title"><i class="fi fi-rr-book"></i> Logic</h1>
+              <ul>
+                <li><i class="fi fi-sr-angle-small-right"></i></li>
+                <li><i class="fi fi-sr-angle-small-right"></i></li>
+                <li><i class="fi fi-sr-angle-small-right"></i></li>
+                <li><i class="fi fi-sr-angle-small-right"></i></li>
+                <li><i class="fi fi-sr-angle-small-right"></i></li>
+              </ul>
+            </div>
+            <div class="__subject">
+              <h1 class="subject__title"><i class="fi fi-rr-book"></i> Theory of Computation</h1>
+
+              <ul>
+                <li><i class="fi fi-sr-angle-small-right"></i>Introduction</li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Automata and Languages :<br><i class="fi fi-rr-arrow-small-right"></i>
+                  Regular Languages<br><i class="fi fi-rr-arrow-small-right"></i>Context-Free Languages
+                </li>
+                <li><i class="fi fi-sr-angle-small-right"></i>Computability Theory :<br><i class="fi fi-rr-arrow-small-right"></i>
+                  The Church-Turing Thesis
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+       </main>
+
+      <script src="./js/script.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('xJOPfTIQ-oNFCUjGY');
+        })();
+    </script>
+</body>
+</html>
