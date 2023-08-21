@@ -453,6 +453,29 @@ body {
   font-size: var(--h2-font-size);
 }
 
+/*.more__btn {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.more__btn button {*/
+/*  padding: .3rem;*/
+/*  font-size: .7rem;*/
+/*  margin-top: .5rem;*/
+/*  padding-left: 1rem;*/
+/*  padding-right: 1rem;*/
+/*}*/
+
+/*.more__btn button:hover {*/
+/*  background-color: var(--bgColorMenu);*/
+/*  color: var(--clr-body-2);*/
+/*}*/
+
+/*.more__btn button i {*/
+/*  transform: translateX(-2px);*/
+/*}*/
+
+
 /* Skill Sliders */
 
 .app {

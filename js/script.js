@@ -77,6 +77,9 @@ function openPage(evt, pageName) {
 document.querySelector("#contact__button").addEventListener("click", function() {
   document.querySelector("#contact__menu-button").click();
 });
+document.querySelector("#contact__button-g").addEventListener("click", function() {
+  document.querySelector("#contact__menu-button").click();
+});
 
 // ========================== Loading Page ================>
 
@@ -152,3 +155,20 @@ function sendEmail() {
     })
     .catch((err) => console.log(err));
 }
+
+
+// Detail Button for Skills
+
+//
+// let isAppVisible = true;
+// document.querySelector('.more__btn').addEventListener('click', function() {
+//   if (isAppVisible) {
+//     document.querySelector('.app').style.display = 'none';
+//     document.querySelector('.skill__bar').style.display = 'block';
+//     isAppVisible = false;
+//   } else {
+//     document.querySelector('.app').style.display = 'block';
+//     document.querySelector('.skill__bar').style.display = 'none';
+//     isAppVisible = true;
+//   }
+// });
