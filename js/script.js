@@ -74,11 +74,13 @@ function openPage(evt, pageName) {
 
 // Contact Me Button
 
+const contactBtn = document.querySelector("#contact__menu-button")
+
 document.querySelector("#contact__button").addEventListener("click", function() {
-  document.querySelector("#contact__menu-button").click();
+  contactBtn.click();
 });
 document.querySelector("#contact__button-g").addEventListener("click", function() {
-  document.querySelector("#contact__menu-button").click();
+  contactBtn.click();
 });
 
 // ========================== Loading Page ================>
