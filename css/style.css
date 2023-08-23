@@ -937,6 +937,10 @@ header a {
     padding: 0.5rem 0;
   }
 
+  div.tag {
+    font-size: .8rem;
+  }
+
   .about__info-title {
     font-size: var(--small-font-size);
   }
@@ -1194,8 +1198,9 @@ header a {
     padding: 0.5rem 0;
   }
 
-  .tag {
-    font-size: 1.25rem;
+  div.tag {
+    font-size: .8rem;
+    padding: .5rem;
   }
 
   .about__info {
