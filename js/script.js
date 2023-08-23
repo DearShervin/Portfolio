@@ -79,9 +79,9 @@ const contactBtn = document.querySelector("#contact__menu-button")
 document.querySelector("#contact__button").addEventListener("click", function() {
   contactBtn.click();
 });
-document.querySelector("#contact__button-g").addEventListener("click", function() {
-  contactBtn.click();
-});
+// document.querySelector("#contact__button-g").addEventListener("click", function() {
+//   contactBtn.click();
+// });
 
 // ========================== Loading Page ================>
 
