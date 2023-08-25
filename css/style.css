@@ -593,8 +593,14 @@ header a {
 .contact__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   row-gap: 1rem;
   column-gap: 2rem;
+}
+
+.contact__container p{
+  grid-column: span 2;
+  justify-self: center;
 }
 
 .contact__information {
