@@ -646,6 +646,7 @@ header a {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+  resize: none;
 }
 
 .copy {
