@@ -407,6 +407,10 @@ body {
   margin-bottom: var(--mb-1-5);
 }
 
+#contact {
+  margin-top: 1.5rem;
+}
+
 .about__info {
   display: flex;
   justify-content: space-evenly;
@@ -596,6 +600,14 @@ header a {
   grid-template-rows: repeat(2, auto);
   row-gap: 1rem;
   column-gap: 2rem;
+}
+
+#contact > div > div {
+  display: flex;
+  flex-direction: column;
+}
+#contact > div > div > div {
+  margin-bottom: 3.5rem;
 }
 
 .contact__container p{
@@ -929,6 +941,10 @@ header a {
 
   /* About */
 
+  #contact > div > div > div {
+    margin-bottom: 1rem;
+  }
+
   .my__skills,
   .my__story {
     font-size: var(--h3-font-size);
@@ -1189,6 +1205,10 @@ header a {
   }
 
   /* About */
+
+  #contact > div > div > div {
+    margin-bottom: 1.5rem;
+  }
 
   /* .my__skills,
   .my__story {
