@@ -1150,6 +1150,10 @@ header a {
 
   /* Home */
 
+  #home > div > div {
+    padding: 0;
+  }
+
   .home__content {
     display: flex;
     flex-direction: column;
@@ -1273,11 +1277,11 @@ header a {
   .research__container h1.research__title {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .research__container ul {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .section {
@@ -1291,7 +1295,15 @@ header a {
   }
 
   .research__interests h1.section__title {
+    font-size: 1.25rem;
     margin-top: 0.5rem;
+  }
+  #research > div.research__interests.container > ul {
+    font-size: 1rem;
+  }
+
+  #research > div.research__interests.container {
+    padding-bottom: var(--mb-1);
   }
 
   .research {
@@ -1322,3 +1334,15 @@ header a {
     padding-bottom: 4rem;
   }
 }
+
+
+@media screen and (max-height: 650px) {
+  body {
+    overflow-y: scroll;
+    margin-top: 3rem;
+  }
+  #courses > div {
+    margin: 0;
+  }
+}
+
