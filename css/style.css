@@ -701,12 +701,12 @@ header a {
   display: block;
   border: 2px solid var(--bgColorMenu);
   border-radius: 0.5rem;
-  padding: 1rem 4rem 2rem 4rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
 }
 
 .research h1.research__title {
   margin-bottom: var(--mb-1);
-  margin-top: var(--mb-1-5);
+  margin-top: var(--mb-0-5);
 }
 
 .research__download-pdf {
@@ -764,6 +764,8 @@ header a {
 
 .subject__container-subtitle.section__subtitle {
   margin-bottom: 0;
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-medium);
 }
 
 /* .courses div.subject__container {
