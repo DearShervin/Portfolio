@@ -412,8 +412,10 @@ body {
 }
 
 .about__info {
-  display: flex;
-  justify-content: space-evenly;
+  /*display: flex;*/
+  /*justify-content: space-evenly;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -758,7 +760,7 @@ header a {
   justify-content: center; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: .5rem 7rem 2rem 7rem;
+  margin: 0rem 6rem 0rem 6rem;
   padding: 0rem 3rem 1rem 3rem;
 }
 
