@@ -138,11 +138,22 @@ menuLinks.forEach((link) => {
 // Email Contact Form
 
 function sendEmail() {
+
+  let name = document.getElementById("contact__name").value;
+  let email = document.getElementById("contact__email").value;
+  let message = document.getElementById("contact__message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please fill in all the fields before sending the email.");
+    return;
+  }
+
   let data = {
-    name: document.getElementById("contact__name").value,
-    email: document.getElementById("contact__email").value,
-    message: document.getElementById("contact__message").value,
+    name: name,
+    email: email,
+    message: message,
   };
+
   const serviceID = "service_zopljre";
   const templateID = "template_xkei7il";
 
