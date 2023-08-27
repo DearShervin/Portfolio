@@ -185,3 +185,34 @@ function sendEmail() {
 //     isAppVisible = true;
 //   }
 // });
+
+let currentButtonIndex = 0;
+const buttons = document.querySelectorAll('.menu__item');
+const buttonCount = buttons.length;
+let lastScrollTime = 0;
+
+function handleScroll(event) {
+  // Throttle scroll events
+  if (Date.now() - lastScrollTime < 1000) return;
+  lastScrollTime = Date.now();
+
+  if (event.deltaY > 0 && currentButtonIndex < buttonCount - 1) {
+    // Scroll down
+    currentButtonIndex++;
+    buttons[currentButtonIndex].click();
+  } else if (event.deltaY < 0 && currentButtonIndex > 0) {
+    // Scroll up
+    currentButtonIndex--;
+    buttons[currentButtonIndex].click();
+  }
+}
+
+document.addEventListener('wheel', handleScroll);
+document.addEventListener('touchmove', handleScroll);
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    currentButtonIndex = index;
+  });
+});
+
