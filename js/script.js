@@ -96,7 +96,7 @@ let colors = ["#cffff1", "#ffe797", "#9999fb", "#068FFF", "#ffb457"];
 
 let loadingInterval = setInterval(() => {
   progress += 1;
-  loaderText.textContent = progress + "%";
+  // loaderText.textContent = progress + "%";
 
   // Update the background color of the loader
   let colorIndex = Math.floor(progress / (100 / colors.length));
