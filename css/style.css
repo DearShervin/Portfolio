@@ -416,7 +416,7 @@ body {
   /*justify-content: space-evenly;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1);
 }
 
 .about__info-title {
@@ -425,7 +425,20 @@ body {
 }
 
 .about__info-name {
-  font-size: var(--smaller-font-size);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+#about > div > div > div.about__info > div:nth-child(3) > span.about__info-name > a {
+  padding: .2rem;
+  margin-left: .3rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#about > div > div > div.about__info > div:nth-child(3) > span.about__info-name > a:hover {
+  background-color: var(--bgColorMenu);
+  color: var(--clr-body-2);
 }
 
 .about__info-title,
