@@ -1280,6 +1280,10 @@ header a {
     margin-top: var(--mb-0-5);
   }
 
+  #about > div > div > div.about__buttons > a {
+    font-size: 1rem;
+  }
+
   /* Research */
 
   .research h1.section__title {
