@@ -87,12 +87,14 @@ document.querySelector("#contact__button").addEventListener("click", function() 
 
 let loader = document.getElementById("loader");
 let loaderText = loader.querySelector("h1");
+let progressBar = document.getElementById("progressBar");
 // let website = document.getElementById("website");
 
 let progress = 0;
 
 // Define the colors for the background animation
-let colors = ["#cffff1", "#ffe797", "#9999fb", "#068FFF", "#ffb457"];
+let colors = ["#cffff1", "#9999fb", "#ffb457"];
+// "#ffe797",, "#068FFF"
 
 let loadingInterval = setInterval(() => {
   progress += 1;
@@ -102,6 +104,9 @@ let loadingInterval = setInterval(() => {
   let colorIndex = Math.floor(progress / (100 / colors.length));
   loader.style.backgroundColor = colors[colorIndex];
 
+  // Update the value of the progress bar
+  progressBar.value = progress;
+
   if (progress === 100) {
     clearInterval(loadingInterval);
 
@@ -109,7 +114,7 @@ let loadingInterval = setInterval(() => {
     // Remove the loader from the page
     loader.parentNode.removeChild(loader);
   }
-}, 15);
+}, 20);
 
 // ===============================> End of Loading Page <===================================//
 
