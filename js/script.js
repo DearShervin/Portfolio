@@ -107,14 +107,14 @@ let loadingInterval = setInterval(() => {
   // Update the value of the progress bar
   progressBar.value = progress;
 
-  if (progress === 100) {
+  if (progress === 110) {
     clearInterval(loadingInterval);
 
     //
     // Remove the loader from the page
     loader.parentNode.removeChild(loader);
   }
-}, 20);
+}, 18);
 
 // ===============================> End of Loading Page <===================================//
 
