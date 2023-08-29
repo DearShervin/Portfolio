@@ -732,7 +732,7 @@ header a {
   justify-items: center;
 }
 
-.home__social_2 > * {
+#contact > div > div > div.home__social_2 > * {
   border: 2px solid var(--bgColorMenu);
   border-radius: .5rem;
   padding: .3rem .5rem;
@@ -743,7 +743,7 @@ header a {
   margin-bottom: 1rem;
 }
 
-.home__social_2 > *:hover {
+#contact > div > div > div.home__social_2 > *:hover {
   color: var(--clr-body-5);
   background-color: var(--bgColorMenu);
   transform: scale(1.2);
