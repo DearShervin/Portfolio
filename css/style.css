@@ -725,6 +725,30 @@ header a {
   background-color: var(--bgColorMenu);
 }
 
+.home__social_2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.home__social_2 > * {
+  border: 2px solid var(--bgColorMenu);
+  border-radius: .5rem;
+  padding: .3rem .5rem;
+  margin: .2rem;
+  transition-property: transform, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.home__social_2 > *:hover {
+  color: var(--clr-body-5);
+  background-color: var(--bgColorMenu);
+  transform: scale(1.2);
+}
+
 /* Research */
 
 .research.section.page {
@@ -1385,6 +1409,15 @@ header a {
     display: block;
     padding-bottom: 4rem;
   }
+
+  .home__social_2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .home__social_2 > * {
+    font-size: 1rem;
+  }
+
 }
 
 
