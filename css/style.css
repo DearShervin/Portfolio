@@ -1339,6 +1339,10 @@ header a {
     font-size: 1rem;
   }
 
+  #about > div > div > div.about__buttons {
+    margin-bottom: 6rem;
+  }
+
   /* Research */
 
   .research h1.section__title {
@@ -1387,7 +1391,7 @@ header a {
     padding: 1rem 0rem 1rem 0rem;
   }
 
-  .research__interests {
+  #research > div {
     padding-bottom: 5rem;
   }
 
@@ -1416,6 +1420,10 @@ header a {
 
   .home__social_2 > * {
     font-size: 1rem;
+  }
+
+  #contact__button {
+    margin-bottom: 6rem;
   }
 
 }
