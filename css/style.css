@@ -856,6 +856,14 @@ header a {
 
 /* Courses Page  */
 
+#courses > h1 {
+  line-height: 2.2rem;
+}
+
+#courses > h2 {
+  margin-bottom: var(--mb-0-5);
+}
+
 .subject__container {
   /* display: flex;
   flex-wrap: wrap;
