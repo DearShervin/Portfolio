@@ -342,6 +342,56 @@ body {
   left: 0;
   z-index: var(--z-fixed);
 }
+/* Scroll Down Pointer*/
+
+.scroll-downs {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  /*margin-left: -16px;*/
+  /*display: block;*/
+  /*width: 32px;*/
+  /*height: 55px;*/
+}
+
+.mousey {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  width: 5px;
+  height: 15px;
+  border-radius: 25%;
+  animation-name: scroll-d;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);
+  animation-iteration-count: infinite;
+}
+
+.scroller {
+  /*width: 5px;*/
+  /*height: 15px;*/
+  /*border-radius: 25%;*/
+  /*animation-name: scroll-d;*/
+  /*animation-duration: 2.2s;*/
+  /*animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);*/
+  /*animation-iteration-count: infinite;*/
+}
+
+@keyframes scroll-d {
+  /* Move the scroller up and down smoothly */
+  0% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+  100% { transform: translateY(0); }
+}
+
+#home > div > div.scroll-downs > div > div:nth-child(2) > span {
+  font-size: 1rem;
+  position: relative;
+  bottom: .3rem;
+  margin-left: .2rem;
+}
+
 
 /* Home */
 
@@ -910,6 +960,10 @@ header a {
     overflow-y: scroll;
   }
 
+  #home > div > div.scroll-downs > div {
+    opacity: 0;
+  }
+
   /* Menu */
   .menu {
     margin: 0;
@@ -1161,6 +1215,10 @@ header a {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: scroll;
+  }
+
+  #home > div > div.scroll-downs > div {
+    opacity: 0;
   }
 
   /* Menu */
