@@ -368,15 +368,15 @@ body {
   animation-iteration-count: infinite;
 }
 
-.scroller {
-  /*width: 5px;*/
-  /*height: 15px;*/
-  /*border-radius: 25%;*/
-  /*animation-name: scroll-d;*/
-  /*animation-duration: 2.2s;*/
-  /*animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);*/
-  /*animation-iteration-count: infinite;*/
-}
+/*.scroller {*/
+/*  width: 5px;*/
+/*  height: 15px;*/
+/*  border-radius: 25%;*/
+/*  animation-name: scroll-d;*/
+/*  animation-duration: 2.2s;*/
+/*  animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);*/
+/*  animation-iteration-count: infinite;*/
+/*}*/
 
 @keyframes scroll-d {
   /* Move the scroller up and down smoothly */
