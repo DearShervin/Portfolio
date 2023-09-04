@@ -428,8 +428,11 @@ body {
   color: white;
 }
 
-.home__img {
+#home > div > div.home__content.grid > div.home__img {
   width: 41.875rem;
+}
+
+#home > div > div.home__content.grid > div.home__img > img {
   border-radius: 20%;
 }
 
