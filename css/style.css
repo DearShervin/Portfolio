@@ -409,7 +409,7 @@ body {
   align-items: center;
 }
 
-#home > div > div.home__content.grid > div.home__data > p {
+.home__data > p {
   width: 85%;
 }
 
@@ -428,11 +428,8 @@ body {
   color: white;
 }
 
-#home > div > div.home__content.grid > div.home__img {
+.home__img {
   width: 41.875rem;
-}
-
-#home > div > div.home__content.grid > div.home__img > img {
   border-radius: 20%;
 }
 
