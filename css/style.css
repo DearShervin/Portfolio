@@ -409,6 +409,10 @@ body {
   align-items: center;
 }
 
+#home > div > div.home__content.grid > div.home__data > p {
+  width: 85%;
+}
+
 .home__social {
   display: grid;
   grid-template-columns: max-content;
@@ -425,7 +429,7 @@ body {
 }
 
 .home__img {
-  width: 580px;
+  width: 670px;
   border-radius: 20%;
 }
 
