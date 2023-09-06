@@ -221,3 +221,33 @@ buttons.forEach((button, index) => {
   });
 });
 
+// Swipe Effect Changing The Page for Mobile
+
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+  touchStartY = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+  touchEndX = event.changedTouches[0].clientX;
+  touchEndY = event.changedTouches[0].clientY;
+  if (Math.abs(touchEndY - touchStartY) < Math.abs(touchEndX - touchStartX)) {
+    if (touchEndX < touchStartX && currentButtonIndex < buttonCount - 1) {
+      // Swipe left
+      currentButtonIndex++;
+      buttons[currentButtonIndex].click();
+    } else if (touchEndX > touchStartX && currentButtonIndex > 0) {
+      // Swipe right
+      currentButtonIndex--;
+      buttons[currentButtonIndex].click();
+    }
+  }
+}
+
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchend', handleTouchEnd);

@@ -1489,24 +1489,8 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  /* .my__skills,
-  .my__story {
-    font-size: var(--h3-font-size);
-  } */
-
-  .app {
-    font-size: var(--smaller-font-size);
-  }
-
-  .tag-list {
-    gap: 0.5rem 0;
-    position: relative;
-    padding: 0.5rem 0;
-  }
-
-  div.tag {
-    font-size: .8rem;
-    padding: .5rem;
+  #about > div > div > div > div.about__buttons {
+    margin-bottom: 6rem;
   }
 
   .about__info {
