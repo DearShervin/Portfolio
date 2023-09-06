@@ -89,6 +89,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--clr-icon-3);
 }
 
 img {
@@ -790,35 +791,35 @@ body {
 }
 @keyframes htmlcss {
   from {width:0%;}
-  to {width:90%;}
+  to {width:80%;}
 }
 @keyframes matlab {
   from {width:0%;}
-  to {width:30%;}
+  to {width:20%;}
 }
 @keyframes tensorflow {
   from {width:0%;}
-  to {width:40%;}
+  to {width:30%;}
 }
 @keyframes scikit {
   from {width:0%;}
-  to {width:50%;}
+  to {width:40%;}
 }
 @keyframes r {
   from {width:0%;}
-  to {width:20%;}
+  to {width:10%;}
 }
 @keyframes numpy {
   from {width:0%;}
-  to {width:70%;}
+  to {width:60%;}
 }
 @keyframes pandas {
   from {width:0%;}
-  to {width:60%;}
+  to {width:50%;}
 }
 @keyframes git {
   from {width:0%;}
-  to {width:50%;}
+  to {width:40%;}
 }
 @keyframes go {
   from{ width :0% ;}
