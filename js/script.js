@@ -220,12 +220,12 @@ function handleTouchEnd() {
       // Swipe left
       currentButtonIndex++;
       buttons[currentButtonIndex].click();
-      pages.scroll(0, 0);
+      setTimeout(() => window.scroll(0, 0), 100);
     } else if (touchEndX > touchStartX && currentButtonIndex > 0) {
       // Swipe right
       currentButtonIndex--;
       buttons[currentButtonIndex].click();
-      pages.scroll(0, 0);
+      setTimeout(() => window.scroll(0, 0), 100);
     }
   }
 }
