@@ -487,7 +487,7 @@ body {
 
 /* About */
 
-#about > div > div > div.about__info > * > span.about__info-name {
+#about > div > div > div > div.about__info > * > span.about__info-name {
   font-weight: var(--font-weight-regular);
 }
 
@@ -535,27 +535,27 @@ body {
 }
 */
 
-#about > div > div > div.about__buttons {
+#about > div > div > div > div.about__buttons {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
 }
 
-#about > div > div > div.about__buttons > * {
-  margin: 1rem;
+#about > div > div > div > div.about__buttons > * {
+  margin: 1rem 1rem 0;
 }
 
-#about > div > div > div.about__buttons > a:nth-child(2):hover {
+#about > div > div > div > div.about__buttons > a:nth-child(2):hover {
   color: var(--clr-body-2);
 }
 
-#about > div > div > div.about__buttons > a:nth-child(2) > span {
+#about > div > div > div > div.about__buttons > a:nth-child(2) > span {
   position: relative;
   top: 0.2rem;
 }
 
-#about > div > div > div.about__buttons > a:nth-child(2) > i {
+#about > div > div > div > div.about__buttons > a:nth-child(2) > i {
   position: relative;
   top: .25rem;
 }
@@ -582,12 +582,10 @@ body {
 }
 
 .my__skills {
-  font-size: var(--font-large);
   font-size: var(--h2-font-size);
 }
 
 .my__story {
-  font-size: var(--font-large);
   font-size: var(--h2-font-size);
 }
 
@@ -616,106 +614,106 @@ body {
 
 /* Skill Sliders */
 
-.app {
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+/*.app {*/
+/*  min-width: 100%;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  flex-direction: column;*/
+/*}*/
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-header h1 {
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-@media (min-width: 768px) {
-  header h1 {
-    font-size: var(--font-medium);
-  }
-}
-header p {
-  color: var(--bgColorMenu);
-  margin-bottom: 0.5rem;
-}
-header a {
-  color: var(--bgColorMenu);
-}
+/*header {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*}*/
+/*header h1 {*/
+/*  font-weight: 600;*/
+/*  font-size: 2rem;*/
+/*  margin-bottom: 0.5rem;*/
+/*}*/
+/*@media (min-width: 768px) {*/
+/*  header h1 {*/
+/*    font-size: var(--font-medium);*/
+/*  }*/
+/*}*/
+/*header p {*/
+/*  color: var(--bgColorMenu);*/
+/*  margin-bottom: 0.5rem;*/
+/*}*/
+/*header a {*/
+/*  color: var(--bgColorMenu);*/
+/*}*/
 
-.tag-list {
-  width: 35rem;
-  max-width: 90vw;
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  gap: 1rem 0;
-  position: relative;
-  padding: 1rem 0;
-  overflow: hidden;
-}
+/*.tag-list {*/
+/*  width: 35rem;*/
+/*  max-width: 90vw;*/
+/*  display: flex;*/
+/*  flex-shrink: 0;*/
+/*  flex-direction: column;*/
+/*  gap: 1rem 0;*/
+/*  position: relative;*/
+/*  padding: 1rem 0;*/
+/*  overflow: hidden;*/
+/*}*/
 
-.loop-slider .inner {
-  display: flex;
-  width: fit-content;
-  animation-name: loop;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: var(--direction);
-  animation-duration: var(--duration);
-}
+/*.loop-slider .inner {*/
+/*  display: flex;*/
+/*  width: fit-content;*/
+/*  animation-name: loop;*/
+/*  animation-timing-function: linear;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-direction: var(--direction);*/
+/*  animation-duration: var(--duration);*/
+/*}*/
 
-.tag {
-  display: flex;
-  align-items: center;
-  gap: 0 0.2rem;
-  color: var(--bgColorMenu);
-  font-size: 0.9rem;
-  background-color: transparent;
-  border: 2px solid var(--bgColorMenu);
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  margin-right: 1rem;
-  transition: transform 0.3s ease-out;
-  /* box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.2rem 1.5rem rgba(0, 0, 0, 0.4); */
-}
+/*.tag {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  gap: 0 0.2rem;*/
+/*  color: var(--bgColorMenu);*/
+/*  font-size: 0.9rem;*/
+/*  background-color: transparent;*/
+/*  border: 2px solid var(--bgColorMenu);*/
+/*  border-radius: 0.4rem;*/
+/*  padding: 0.7rem 1rem;*/
+/*  margin-right: 1rem;*/
+/*  transition: transform 0.3s ease-out;*/
+/*  !* box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.2rem 1.5rem rgba(0, 0, 0, 0.4); *!*/
+/*}*/
 
-.tag:hover {
-  background-color: var(--bgColorMenu);
-  color: var(--clr-body-2);
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
+/*.tag:hover {*/
+/*  background-color: var(--bgColorMenu);*/
+/*  color: var(--clr-body-2);*/
+/*  transform: translateY(-5px);*/
+/*  transition: 0.3s;*/
+/*}*/
 
-.tag span {
-  font-size: 1.2rem;
-  color: var(--bgColorMenu);
-}
+/*.tag span {*/
+/*  font-size: 1.2rem;*/
+/*  color: var(--bgColorMenu);*/
+/*}*/
 
-.tag:hover span {
-  color: var(--clr-body-2);
-}
+/*.tag:hover span {*/
+/*  color: var(--clr-body-2);*/
+/*}*/
 
-.fade {
-  pointer-events: none;
-  /* background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b); */
-  position: absolute;
-  inset: 0;
-}
+/*.fade {*/
+/*  pointer-events: none;*/
+/*  !* background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b); *!*/
+/*  position: absolute;*/
+/*  inset: 0;*/
+/*}*/
 
-@keyframes loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+/*@keyframes loop {*/
+/*  0% {*/
+/*    transform: translateX(0);*/
+/*  }*/
+/*  100% {*/
+/*    transform: translateX(-50%);*/
+/*  }*/
+/*}*/
 
 /* End Of Skill Sliders */
 
@@ -724,6 +722,107 @@ header a {
   position: relative;
   top: 0.05rem;
   margin-left: var(--mb-0-5);
+}
+
+/* Skill Container */
+
+.row {
+  display: flex;
+}
+
+.col {
+  text-align: left;
+  flex: 50%;
+  padding: 0 1rem 1rem;
+}
+
+#about > div > div > div > div.skill__container > div > div:nth-child(1) > p,
+#about > div > div > div > div.skill__container > div > div:nth-child(2) > p {
+  margin: .2rem;
+}
+
+.skill__container {
+  /*border: 2px solid var(--bgColorMenu);*/
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+/*#about > div > div > div > div.skill__container > h3 {*/
+/*  margin-bottom: .5rem;*/
+/*}*/
+#about {
+  margin-bottom: -2rem;
+}
+
+.skill-container {
+  width: 100%;
+  background-color: transparent;
+  border-radius: .5rem;
+  border: 2px solid var(--bgColorMenu);
+}
+
+.skills {
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  color: var(--bgColorMenu);
+  border-radius: .5rem;
+  border: 1px solid var(--bgColorMenu);
+}
+
+.python {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: python; animation-duration:4s; animation-fill-mode: forwards;}
+.javascript {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: javascript; animation-duration:4s; animation-fill-mode: forwards;}
+.htmlcss {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: htmlcss; animation-duration:4s; animation-fill-mode: forwards;}
+.matlab {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :matlab; animation-duration :4s; animation-fill-mode :forwards;}
+.tensorflow {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :tensorflow; animation-duration :4s; animation-fill-mode :forwards;}
+.scikit {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :scikit; animation-duration :4s; animation-fill-mode :forwards;}
+.r {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :r; animation-duration :4s; animation-fill-mode :forwards;}
+.numpy {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :numpy; animation-duration :4s; animation-fill-mode :forwards;}
+.pandas {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :pandas; animation-duration :4s; animation-fill-mode :forwards;}
+.git {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :git; animation-duration :4s;animation-fill-mode :forwards;}
+.go {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :go ;animation-duration :4s ;animation-fill-mode :forwards;}
+@keyframes python {
+  from {width:0%;}
+  to {width:80%;}
+}
+@keyframes javascript {
+  from {width:0%;}
+  to {width:60%;}
+}
+@keyframes htmlcss {
+  from {width:0%;}
+  to {width:90%;}
+}
+@keyframes matlab {
+  from {width:0%;}
+  to {width:30%;}
+}
+@keyframes tensorflow {
+  from {width:0%;}
+  to {width:40%;}
+}
+@keyframes scikit {
+  from {width:0%;}
+  to {width:50%;}
+}
+@keyframes r {
+  from {width:0%;}
+  to {width:20%;}
+}
+@keyframes numpy {
+  from {width:0%;}
+  to {width:70%;}
+}
+@keyframes pandas {
+  from {width:0%;}
+  to {width:60%;}
+}
+@keyframes git {
+  from {width:0%;}
+  to {width:50%;}
+}
+@keyframes go {
+  from{ width :0% ;}
+  to{ width :20%; }
 }
 
 /* Contact */
