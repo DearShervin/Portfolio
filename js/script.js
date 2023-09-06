@@ -11,7 +11,7 @@ let activeItem = menu.querySelector(".active");
 function clickItem(item, index) {
   menu.style.removeProperty("--timeOut");
 
-  if (activeItem == item) return;
+  if (activeItem === item) return;
 
   if (activeItem) {
     activeItem.classList.remove("active");
@@ -128,18 +128,6 @@ menuLinks.forEach((link) => {
   });
 });
 
-// // select the loader element
-// const loader = document.querySelector('#loader');
-
-// // select the second div element
-// const content = document.querySelector('#content');
-
-// // add an event listener to the loader element to detect when the animation ends
-// loader.addEventListener('animationend', () => {
-//   // add a class to the second div that triggers the desired animation
-//   content.classList.add('animate');
-// });
-
 // Email Contact Form
 
 function sendEmail() {
@@ -176,20 +164,6 @@ function sendEmail() {
 
 
 // Detail Button for Skills
-
-//
-// let isAppVisible = true;
-// document.querySelector('.more__btn').addEventListener('click', function() {
-//   if (isAppVisible) {
-//     document.querySelector('.app').style.display = 'none';
-//     document.querySelector('.skill__bar').style.display = 'block';
-//     isAppVisible = false;
-//   } else {
-//     document.querySelector('.app').style.display = 'block';
-//     document.querySelector('.skill__bar').style.display = 'none';
-//     isAppVisible = true;
-//   }
-// });
 
 let currentButtonIndex = 0;
 const buttons = document.querySelectorAll('.menu__item');
@@ -244,10 +218,12 @@ function handleTouchEnd() {
       // Swipe left
       currentButtonIndex++;
       buttons[currentButtonIndex].click();
+      window.scrollTo(0, 0);
     } else if (touchEndX > touchStartX && currentButtonIndex > 0) {
       // Swipe right
       currentButtonIndex--;
       buttons[currentButtonIndex].click();
+      window.scrollTo(0, 0);
     }
   }
 }
