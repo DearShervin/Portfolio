@@ -233,9 +233,12 @@ function handleTouchStart(event) {
   touchStartY = event.touches[0].clientY;
 }
 
-function handleTouchEnd(event) {
+function handleTouchMove(event) {
   touchEndX = event.changedTouches[0].clientX;
   touchEndY = event.changedTouches[0].clientY;
+}
+
+function handleTouchEnd() {
   if (Math.abs(touchEndY - touchStartY) < Math.abs(touchEndX - touchStartX)) {
     if (touchEndX < touchStartX && currentButtonIndex < buttonCount - 1) {
       // Swipe left
@@ -250,4 +253,5 @@ function handleTouchEnd(event) {
 }
 
 document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchmove', handleTouchMove);
 document.addEventListener('touchend', handleTouchEnd);
