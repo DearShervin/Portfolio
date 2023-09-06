@@ -89,7 +89,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--clr-icon-3);
+  color: darkblue;
 }
 
 img {
@@ -819,7 +819,7 @@ body {
 }
 @keyframes git {
   from {width:0%;}
-  to {width:40%;}
+  to {width:50%;}
 }
 @keyframes go {
   from{ width :0% ;}
