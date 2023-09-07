@@ -1325,6 +1325,10 @@ body {
     opacity: 0;
   }
 
+  #home > div > div.home__content.grid > div.home__data > p {
+    width: 100%;
+  }
+
   /* Menu */
   .menu {
     margin: 0;
