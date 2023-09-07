@@ -7,7 +7,7 @@
 
   --clr-body-1: #ffb457;
   --clr-body-2: #91c8e4;
-  --clr-body-3: #9999fb;
+  --clr-body-3: #adadfb;
   --clr-body-4: #ffe797;
   --clr-body-5: #cffff1;
 
@@ -938,6 +938,16 @@ body {
 }
 
 /* Research */
+
+.research__container.container,
+.research__interests.container {
+  max-width: 850px;
+}
+
+#research > div > div.research__interests.container > ul > li {
+  display: inline-block;
+  padding: .3rem;
+}
 
 .research.section.page {
   display: block;
