@@ -192,6 +192,29 @@ body {
   animation: fadeIn .3s;
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  padding: .1rem;
+  background-color: transparent;
+  border: none;
+  animation: fadeIn .3s ease-in-out;
+}
+
+#back-to-top:hover {
+  background-color: var(--bgColorMenu);
+  animation: fadeIn .3s ease-in-out;
+}
+
+#back-to-top i{
+  position: relative;
+  top: 2px;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+}
+
 .menu {
   margin: 0;
   display: flex;
@@ -1346,6 +1369,12 @@ body {
 
   #home > div > div.home__content.grid > div.home__data > p {
     width: 100%;
+  }
+
+  #back-to-top {
+    opacity: 0;
+    display: none;
+    animation: none;
   }
 
   /* Menu */
