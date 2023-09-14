@@ -1473,6 +1473,10 @@ body {
   }
 
   /* ---- Nav Bar ----- */
+  body > nav {
+    margin-top: -2rem;
+  }
+
   body > div.burger {
     position: fixed;
     top: 1%;
