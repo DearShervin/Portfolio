@@ -8,7 +8,7 @@ const menuItems = menu.querySelectorAll(".menu__item");
 const menuBorder = menu.querySelector(".menu__border");
 let activeItem = menu.querySelector(".active");
 
-// #9999fb Dark Purple Hex -- #adadfb Lighter
+// #9999fb Dark Purple Hex -- #adadfb Lighter // Beige F5F5DC // Orange ffb457
 
 function clickItem(item, index) {
   menu.style.removeProperty("--timeOut");
@@ -261,3 +261,32 @@ document.getElementById('back-to-top').addEventListener('click', function() {
   buttons[0].click();
 });
 
+// ------------------ Nav Bar ----------------------->
+
+const burger = document.querySelector(".burger");
+// const infoIcon = document.querySelector(".burger i")
+
+function navToggle(e) {
+  if (!e.target.classList.contains("active")) {
+    e.target.classList.add("active");
+    gsap.to(".nav-bar", 1.5, { clipPath: "circle(2500px at 100% -10%)" });
+    document.body.classList.add("hide");
+  } else {
+    e.target.classList.remove("active");
+    gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+    document.body.classList.remove("hide");
+  }
+}
+
+burger.addEventListener("click", navToggle);
+
+// burger.addEventListener('mouseout', function() {
+//   infoIcon.style.color = "#1d1d27"
+// });
+// burger.addEventListener("mouseover", (e) => {
+//   if (e.target.classList.contains("active")) {
+//   infoIcon.style.color = "#F5F5DC";
+//   } else {
+//     infoIcon.style.color = bgColorsBody[currentButtonIndex];
+//   }
+// });
