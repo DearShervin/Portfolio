@@ -117,7 +117,7 @@ img {
 }
 
 /*-------Nav-Bar------------- */
-.burger {
+body > div.burger {
   position: absolute;
   top: 3rem;
   right: 4rem;
@@ -130,7 +130,7 @@ img {
   z-index: 101;
 }
 
-.nav-bar {
+body > nav {
   position: fixed;
   font-family: 'Kalam', cursive;
   /*top: 4rem;*/
@@ -149,13 +149,13 @@ img {
   );
 }
 
-.burger i{
+body > div.burger i{
   font-size: 1.8rem;
   outline: none;
   border: none;
 }
 
-.speech {
+body > nav > div {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -1488,7 +1488,7 @@ body {
     overflow-y: scroll;
   }
 
-  .speech {
+  body > nav > div {
     width: 100vw;
     height: 100vh;
     display: block;
