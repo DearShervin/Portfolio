@@ -177,23 +177,28 @@ body > nav > div > div.social-links > div {
   row-gap: 1rem;
 }
 
-body > nav > div > div.social-links > div > a > i {
+body > nav > div > div.social-links > div > a > img {
   margin: .5rem;
   font-size: 1.5rem;
 }
 
-body > nav > div > div.social-links > div > a > i {
+body > nav > div > div.social-links > div > a > img {
   position: relative;
-  top: 4px;
+  top: 12px;
 }
 
 body > nav > div > div.social-links > div > a > *{
   color: var(--bgColorMenu);
 }
 
-body > nav > div > div.social-links > div > a:nth-child(4) {
+body > nav > div > div.social-links > div > a > img {
+  height: 22px;
+}
+
+.hand-drawn {
   position: relative;
-  top: 6px;
+  top: 8px;
+  height: 1.5rem;
 }
 
 /* ------------------------------------------------------ */
@@ -459,21 +464,11 @@ body {
   /*height: 55px;*/
 }
 
-.mousey {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  font-size: 1.5rem;
-  width: 5px;
-  height: 15px;
-  border-radius: 25%;
-  animation-name: scroll-d;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);
-  animation-iteration-count: infinite;
-}
-
-/*.scroller {*/
+/*.mousey > scroller {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  padding: 2rem;*/
+/*  font-size: 1.5rem;*/
 /*  width: 5px;*/
 /*  height: 15px;*/
 /*  border-radius: 25%;*/
@@ -490,13 +485,22 @@ body {
   100% { transform: translateY(0); }
 }
 
-#home > div > div.scroll-downs > div > div:nth-child(2) > span {
-  font-size: 1rem;
+#home > div > div.scroll-downs > div > div {
+  font-size: 1.2rem;
+  font-family: 'Kalam', cursive;
   position: relative;
   bottom: .3rem;
   margin-left: .2rem;
+  animation-name: scroll-d;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);
+  animation-iteration-count: infinite;
 }
 
+#home > div > div.scroll-downs > div > div > img {
+  height: 24px;
+  transform: rotate(180deg);
+}
 
 /* Home */
 
@@ -1134,11 +1138,21 @@ body {
 /* Courses Page  */
 
 #courses > h1 {
-  line-height: 2.2rem;
+  line-height: 1rem;
 }
 
 #courses > h2 {
   margin-bottom: var(--mb-0-5);
+}
+
+#courses > h2 > img {
+  position: relative;
+  top: 10px;
+  height: 35px;
+}
+
+#courses > div > div > h1 > img {
+  height: 30px;
 }
 
 .subject__container {
@@ -1463,6 +1477,10 @@ body {
     position: fixed;
     top: 1%;
     right: 1%;
+  }
+
+  body > div.burger > img {
+    display: none;
   }
 
   body > nav > div > div.more {
