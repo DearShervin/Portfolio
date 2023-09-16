@@ -269,11 +269,11 @@ const burger = document.querySelector(".burger");
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
     e.target.classList.add("active");
-    gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -20%)" });
+    gsap.to(".nav-bar", 1, { clipPath: "circle(156.25rem at 100% -15%)" });
     document.body.classList.add("hide");
   } else {
     e.target.classList.remove("active");
-    gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -20%)" });
+    gsap.to(".nav-bar", 1, { clipPath: "circle(3.125rem at 100% -15%)" });
     document.body.classList.remove("hide");
   }
 }

@@ -215,7 +215,7 @@ body > nav > div > div.social-links > div > a:hover {
 
 body > nav > .light-bulbs > img {
   position: absolute;
-  height: 55px;
+  height: 3.438rem;
   width: auto;
   /*width: 55px;*/
 }
@@ -225,152 +225,152 @@ body > nav > .light-bulbs {
 }
 
 body > nav > .light-bulbs > img:nth-child(1) {
-  transform: translate(630px, 180px) rotate(20deg);
+  transform: translate(39.375rem, 11.25rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(2) {
-  transform: translate(600px, -200px) rotate(-30deg);
+  transform: translate(37.5rem, -12.5rem) rotate(-30deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(3) {
-  transform: translate(-650px, 200px) rotate(-20deg);
+  transform: translate(-40.625rem, 12.5rem) rotate(-20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(4) {
-  transform: translate(-300px, 280px) rotate(20deg);
+  transform: translate(-18.75rem, 17.5rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(5) {
-  transform: translate(-650px, -200px) rotate(40deg);
+  transform: translate(-40.625rem, -12.5rem) rotate(40deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(6) {
-  transform: translate(550px, 260px) rotate(15deg);
+  transform: translate(34.375rem, 16.25rem) rotate(15deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(7) {
-  transform: translate(400px, 230px) rotate(20deg);
+  transform: translate(25rem, 14.375rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(8) {
-  transform: translate(280px, 270px) rotate(-20deg);
+  transform: translate(17.5rem, 16.875rem) rotate(-20deg);
 
 }
 body > nav > .light-bulbs > img:nth-child(9) {
-  transform: translate(550px, -60px) rotate(20deg);
+  transform: translate(34.375rem, -3.75rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(10) {
-  transform: translate(-550px, 0px) rotate(20deg);
+  transform: translate(-34.375rem, 0) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(11) {
-  transform: translate(-260px, -350px) rotate(20deg);
+  transform: translate(-16.25rem, -21.875rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(12) {
-  transform: translate(-670px, -70px) rotate(-20deg);
+  transform: translate(-41.875rem, -4.375rem) rotate(-20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(13) {
-  transform: translate(650px, 0px) rotate(20deg);
+  transform: translate(40.625rem, 0) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(14) {
-  transform: translate(530px, 70px) rotate(-20deg);
+  transform: translate(33.125rem, 4.375rem) rotate(-20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(15) {
-  transform: translate(0px, 200px) rotate(20deg);
+  transform: translate(0, 12.5rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(16) {
-  transform: translate(-630px, 80px) rotate(-10deg);
+  transform: translate(-39.375rem, 5rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(17) {
-  transform: translate(350px, -300px);
+  transform: translate(21.875rem, -18.75rem);
 }
 
 body > nav > .light-bulbs > img:nth-child(18) {
-  transform: translate(-380px, -300px) rotate(-10deg);
+  transform: translate(-23.75rem, -18.75rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(19) {
-  transform: translate(550px, -300px) rotate(10deg);
+  transform: translate(34.375rem, -18.75rem) rotate(10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(20) {
-  transform: translate(-490px, 270px) rotate(-10deg);
+  transform: translate(-30.625rem, 16.875rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(21) {
-  transform: translate(-680px, -300px) rotate(-10deg);
+  transform: translate(-42.5rem, -18.75rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(22) {
-  transform: translate(-540px, -280px) rotate(20deg);
+  transform: translate(-33.75rem, -17.5rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(23) {
-  transform: translate(-380px, 200px) rotate(-10deg);
+  transform: translate(-23.75rem, 12.5rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(24) {
-  transform: translate(-200px, 200px) rotate(-30deg);
+  transform: translate(-12.5rem, 12.5rem) rotate(-30deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(25) {
-  transform: translate(-120px, 320px) rotate(20deg);
+  transform: translate(-7.5rem, 20rem) rotate(20deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(26) {
-  transform: translate(200px, 180px) rotate(-10deg);
+  transform: translate(12.5rem, 11.25rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(27) {
-  transform: translate(450px, -200px) rotate(-10deg);
+  transform: translate(28.125rem, -12.5rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(28) {
-  transform: translate(100px, 270px) rotate(-10deg);
+  transform: translate(6.25rem, 16.875rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(29) {
-  transform: translate(-690px, 280px) rotate(-10deg);
+  transform: translate(-43.125rem, 17.5rem) rotate(-10deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(30) {
-  transform: translate(-430px, -220px) rotate(0deg);
-  height: 70px;
+  transform: translate(-26.875rem, -13.75rem) rotate(0deg);
+  height: 4.375rem;
 }
 
 body > nav > .light-bulbs > img:nth-child(31) {
-  transform: translate(-520px, -170px) rotate(-30deg);
+  transform: translate(-32.5rem, -10.625rem) rotate(-30deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(32) {
-  transform: translate(100px, 130px) rotate(-30deg);
+  transform: translate(6.25rem, 8.125rem) rotate(-30deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(33) {
-  transform: translate(250px, -330px) rotate(-60deg);
+  transform: translate(15.625rem, -20.625rem) rotate(-60deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(34) {
-  transform: translate(700px, 300px) rotate(30deg);
+  transform: translate(43.75rem, 18.75rem) rotate(30deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(35) {
-  transform: translate(-530px, 180px) rotate(-80deg);
+  transform: translate(-33.125rem, 11.25rem) rotate(-80deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(36) {
-  transform: translate(0px, -340px) rotate(0deg);
+  transform: translate(0, -21.25rem) rotate(0deg);
 }
 
 body > nav > .light-bulbs > img:nth-child(37) {
-  transform: translate(700px, -140px) rotate(30deg);
+  transform: translate(43.75rem, -8.75rem) rotate(30deg);
 }
 /* ------------------------------------------------------ */
 
@@ -2004,3 +2004,34 @@ body {
   }
 }
 
+@media screen and (min-width: 2400px) {
+  html {
+    font-size: 160%;
+  }
+
+  #back-to-top > img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .container {
+    max-width: 50rem;
+  }
+
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2300px)  {
+  html {
+    font-size: 130%;
+  }
+
+  #back-to-top > img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .container {
+    max-width: 50rem;
+  }
+
+}
