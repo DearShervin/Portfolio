@@ -246,16 +246,16 @@ for (let i = 0; i < buttons.length; i++) {
       backToTopButton.style.display = 'none';
     } else {
       backToTopButton.style.display = 'block';
-      backToTopButton.addEventListener('mouseover', () => {
-        arrowIcon.style.color = bgColorsBody[i];
-      })
+      // backToTopButton.addEventListener('mouseover', () => {
+      //   arrowIcon.style.color = bgColorsBody[i];
+      // })
     }
   });
 }
 
-backToTopButton.addEventListener('mouseout', function() {
-  arrowIcon.style.color = "#1d1d27"
-});
+// backToTopButton.addEventListener('mouseout', function() {
+//   arrowIcon.style.color = "#1d1d27"
+// });
 
 document.getElementById('back-to-top').addEventListener('click', function() {
   buttons[0].click();
