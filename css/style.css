@@ -150,7 +150,7 @@ body > nav {
   );
 }
 
-body > div.burger img:nth-child(1){
+body > div.burger > img:nth-child(1) {
   height: 2rem;
   width: auto;
   outline: none;
