@@ -2095,8 +2095,10 @@ body {
 }
 
 @media screen and (max-height: 1030px) and (min-height: 800px) and (min-width: 1700px) {
-  .container:nth-child(3),
-  #research > div > div.research__interests.container {
+  #research > div > * {
     min-width: 1300px;
+  }
+  #contact > span {
+    margin-bottom: .5rem;
   }
 }
