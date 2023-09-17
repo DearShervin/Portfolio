@@ -1923,10 +1923,18 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
+    margin-left: 1rem;
+  }
+
+  #research > div > div.research__container.container > ul:nth-child(2) > div > a > * {
+    font-size: .7rem;
+    padding: 0;
+    margin: 0;
   }
 
   .research__container ul {
     font-size: 1rem;
+    margin: 1rem;
   }
 
   .section {
@@ -1937,6 +1945,11 @@ body {
   .research__container,
   .research__interests {
     padding: 0.5rem 0.5rem;
+  }
+
+  #research > div > div.research__interests.container > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .research__interests h1.section__title {
