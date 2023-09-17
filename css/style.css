@@ -2078,7 +2078,7 @@ body {
 
 }
 
-@media screen and (min-width: 1900px) and (max-width: 2300px)  {
+@media screen and (min-width: 1900px) and (max-width: 2380px)  {
   html {
     font-size: 130%;
   }
@@ -2092,4 +2092,11 @@ body {
     max-width: 50rem;
   }
 
+}
+
+@media screen and (max-height: 1030px) and (min-height: 800px) and (min-width: 1700px) {
+  .container:nth-child(3),
+  #research > div > div.research__interests.container {
+    min-width: 1300px;
+  }
 }
