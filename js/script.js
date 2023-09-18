@@ -95,16 +95,16 @@ let progressBar = document.getElementById("progressBar");
 let progress = 0;
 
 // Define the colors for the background animation
-let colors = ["#cffff1", "#bfbff8", "#ffb457"];
+// let colors = ["#cffff1", "#bfbff8", "#ffb457"];
 // "#ffe797",, "#068FFF"
 
 let loadingInterval = setInterval(() => {
   progress += 1;
   // loaderText.textContent = progress + "%";
 
-  // Update the background color of the loader
-  let colorIndex = Math.floor(progress / (100 / colors.length));
-  loader.style.backgroundColor = colors[colorIndex];
+  // Update the background color of the loader (if needed - I removed this for eyes' sake)
+  // let colorIndex = Math.floor(progress / (100 / colors.length));
+  // loader.style.backgroundColor = colors[colorIndex];
 
   // Update the value of the progress bar
   progressBar.value = progress;
@@ -112,11 +112,16 @@ let loadingInterval = setInterval(() => {
   if (progress === 110) {
     clearInterval(loadingInterval);
 
-    //
-    // Remove the loader from the page
-    loader.parentNode.removeChild(loader);
+    // Add the fadeOut class to the loader
+    loader.classList.add('fadeOut');
+
+    // Remove the loader after the animation has completed
+    setTimeout(() => {
+      loader.parentNode.removeChild(loader);
+    }, 1000); // The duration of the animation in milliseconds
   }
-}, 18);
+
+}, 20);
 
 // ===============================> End of Loading Page <===================================//
 
