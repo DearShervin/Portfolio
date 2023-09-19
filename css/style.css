@@ -481,6 +481,10 @@ progress[value]::-webkit-progress-value {
 
 /* ------------------------------------------------------- */
 
+#home > div > div.home__content.grid > div.home__img > img {
+  background: linear-gradient(180deg, #EADBC8, transparent);
+}
+
 body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
