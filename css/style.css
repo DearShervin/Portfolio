@@ -164,7 +164,7 @@ body > nav {
   /*left: 4rem;*/
   width: 100%;
   height: 100%;
-  background: #f8828a;
+  background: #ff979d;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -539,9 +539,6 @@ progress[value]::-webkit-progress-value {
 
 /* ------------------------------------------------------- */
 
-
-
-
 #courses > div > div,
 #research > div > div.research__container.container,
 #research > div > div.research__interests.container,
@@ -570,12 +567,21 @@ progress[value]::-webkit-progress-value {
   height: auto;
 }
 
+/* --------- Popping out effect ---------------- */
+#home > div > div.home__content.grid > div.home__data,
+#home > div > div.home__content.grid > div.home__img > img,
+body > menu,
+#about > div > div > div,
+#research > div > div.research__container.container,
+#research > div > div.research__interests.container,
+#courses > div > *,
+#contact > div.contact__container.container.grid {
+  box-shadow: 8px 8px 4px grey;
+}
+
 /* ------------------------------------------------------- */
 
-/*main {*/
-/*  border-radius: 5rem;*/
-/*  background-color: #A8DADC;*/
-/*}*/
+
 
 #home > div > div.home__content.grid > div.home__img > img {
   background: linear-gradient(180deg, #f8828a, transparent);
@@ -929,6 +935,23 @@ body {
   margin-left: var(--mb-0-5);
 }
 
+#contact__button {
+  background-color: var(--clr-body-1);
+}
+
+#contact__button:hover {
+  background-color: var(--bgColorMenu);
+}
+
+#contact > div.contact__container.container.grid > div > div.home__social_2 > * {
+  background-color: #F1FAEE;
+}
+
+#contact > div.contact__container.container.grid > div > div.home__social_2 > *:hover {
+  background-color: var(--bgColorMenu);
+}
+
+
 /* About */
 
 #about > div > div > div > div.about__info > * > span.about__info-name {
@@ -1015,12 +1038,14 @@ body {
   justify-content: center;
 }
 
-.button--flex:nth-child(1) {
-  background-color: transparent;
+.button--flex:nth-child(1),
+#about > div > div > div > div.about__buttons > a:nth-child(2) {
+  background-color: var(--clr-body-1);
   color: var(--bgColorMenu);
 }
 
-.button--flex:nth-child(1):hover {
+.button--flex:nth-child(1):hover,
+#about > div > div > div > div.about__buttons > a:nth-child(2):hover {
   background-color: var(--bgColorMenu);
   color: #E63946;
 }
@@ -1274,15 +1299,25 @@ body {
 .contact__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  row-gap: 1rem;
-  column-gap: 2rem;
+  /*grid-template-rows: repeat(2, auto);*/
+  /*row-gap: 1rem;*/
+  /*column-gap: 2rem;*/
 }
 
 #contact > div.contact__container.container.grid {
   border: 2px solid;
   border-radius: .5rem;
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 1rem;
+}
+
+#contact-form > div.contact__input.grid > *,
+#contact-form > div.contact__content {
+  background-color: #F1FAEE;
+}
+
+#contact__name,
+#contact__email {
+  margin-bottom: .4rem;
 }
 
 #contact > div > div {
@@ -1354,7 +1389,7 @@ body {
 
 .contact__form a:only-child {
   border: 2px solid var(--bgColorMenu);
-  background-color: transparent;
+  background-color: var(--clr-body-1);
   color: var(--bgColorMenu);
 }
 .contact__form a:only-child:hover {
@@ -1383,6 +1418,10 @@ body {
   color: #E63946;
   background-color: var(--bgColorMenu);
   transform: scale(1.2);
+}
+
+#contact > div.contact__container.container.grid > div > * {
+  margin-bottom: 2rem;
 }
 
 /* Research */
@@ -1435,6 +1474,7 @@ body {
   display: flex;
   padding: 0.5rem 0.5rem;
   margin-bottom: var(--mb-0-5);
+  background-color: var(--clr-body-1);
 }
 
 .research__download-pdf a.button:hover {
@@ -1452,6 +1492,17 @@ body {
   border-radius: 0.5rem;
   margin-top: var(--mb-0-5);
   padding: 1.5rem 2.5rem;
+}
+
+#research > div > div.research__interests.container > ul > * {
+  background-color: #ffa1aa;
+  border-radius: .5rem;
+  margin: 0 .5rem;
+}
+
+#research > div > div.research__interests.container > ul > * > i::before {
+  background-color: #E63946;
+  border-radius: .4rem;
 }
 
 .research__interests h1.section__title {
@@ -2176,14 +2227,14 @@ body {
   }
 
   #contact > h2 {
-    margin-top: 13rem;
+    margin-top:23rem;
   }
 
   #contact {
     width: 93vw;
     padding: 0;
     padding-bottom: 0;
-    margin-bottom: 8rem;
+    margin-bottom: 21rem;
   }
 
   #submit-button {
