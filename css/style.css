@@ -575,7 +575,13 @@ body > menu,
 #research > div > div.research__container.container,
 #research > div > div.research__interests.container,
 #courses > div > *,
-#contact > div.contact__container.container.grid {
+#contact > div.contact__container.container.grid,
+#contact__button:hover,
+#about > div > div > div > div.about__buttons > a.button.button--flex:hover,
+#about > div > div > div > div.about__buttons > a:nth-child(2):hover,
+#research > div > div.research__container.container > ul:nth-child(2) > div > a:hover,
+#submit-button:hover,
+#contact > div.contact__container.container.grid > div > div.home__social_2 > *:hover {
   box-shadow: 8px 8px 4px grey;
 }
 
