@@ -135,8 +135,29 @@ menuLinks.forEach((link) => {
   });
 });
 
-// Email Contact Form
+// =========== Email Contact Form =========>
+function showPopup() {
+  let popup = document.getElementById('popup');
+  let backdrop = document.getElementById('backdrop');
+  popup.style.display = 'block';
+  popup.classList.add('fade-in');
+  backdrop.style.display = 'block';
+  backdrop.classList.add('fade-in');
 
+  setTimeout(function() {
+    popup.classList.remove('fade-in');
+    popup.classList.add('fade-out');
+    backdrop.classList.remove('fade-in');
+    backdrop.classList.add('fade-out');
+  }, 1450);
+
+  setTimeout(function() {
+    popup.style.display = 'none';
+    popup.classList.remove('fade-out');
+    backdrop.style.display = 'none';
+    backdrop.classList.remove('fade-out');
+  }, 1700);
+}
 function sendEmail() {
 
   let name = document.getElementById("contact__name").value;
@@ -164,7 +185,7 @@ function sendEmail() {
       document.getElementById("contact__email").value = "";
       document.getElementById("contact__message").value = "";
       console.log(res);
-      alert("Your Message Was Sent Successfully");
+      showPopup()
     })
     .catch((err) => console.log(err));
 }
