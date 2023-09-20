@@ -1,8 +1,9 @@
 // Menu
 
 const body = document.body;
-const bgColorsBody = ["#ffb457", "#91C8E4", "#bfbff8", "#ffe797", "#cffff1"];
-const btnColors = ["#ff8c00", "#068FFF", "#4343f5", "#e0b115", "#65ddb7"];
+// const bgColorsBody = ["#ffb457", "#91C8E4", "#bfbff8", "#ffe797", "#cffff1"];
+const bgColorsBody = ["#F1FAEE", "#F1FAEE", "#F1FAEE", "#F1FAEE", "#F1FAEE"];
+// const btnColors = ["#ff8c00", "#068FFF", "#4343f5", "#e0b115", "#65ddb7"];
 const menu = body.querySelector(".menu");
 const menuItems = menu.querySelectorAll(".menu__item");
 const menuBorder = menu.querySelector(".menu__border");
