@@ -585,6 +585,10 @@ body > menu,
   box-shadow: 8px 8px 4px grey;
 }
 
+body > menu > button.menu__item.active::before {
+  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+}
+
 /* ------------------------------------------------------- */
 
 
