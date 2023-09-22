@@ -1214,9 +1214,14 @@ body {
   flex: 50%;
   padding: 0 1rem 1rem;
 }
+#about > div > div > div > div.skill__container > h3 {
+  font-weight: 400;
+}
 
 #about > div > div > div > div.skill__container > div > div:nth-child(1) > p,
-#about > div > div > div > div.skill__container > div > div:nth-child(2) > p {
+#about > div > div > div > div.skill__container > div > div:nth-child(2) > p,
+#about > div > div > div > div.skill__container > div > div:nth-child(3) > p,
+#about > div > div > div > div.skill__container > div > div:nth-child(4) > p {
   margin: .2rem;
 }
 
@@ -1258,7 +1263,16 @@ body {
 .numpy {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :numpy; animation-duration :4s; animation-fill-mode :forwards;}
 .pandas {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :pandas; animation-duration :4s; animation-fill-mode :forwards;}
 .git {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :git; animation-duration :4s;animation-fill-mode :forwards;}
-.go {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :go ;animation-duration :4s ;animation-fill-mode :forwards;}
+.go {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :go;animation-duration :4s ;animation-fill-mode :forwards;}
+.torch {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :torch;animation-duration :4s ;animation-fill-mode :forwards;}
+.cp {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :cp;animation-duration :4s ;animation-fill-mode :forwards;}
+.prompt {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :prompt;animation-duration :4s ;animation-fill-mode :forwards;}
+.word {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :word;animation-duration :4s ;animation-fill-mode :forwards;}
+.excel {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :excel;animation-duration :4s ;animation-fill-mode :forwards;}
+.power {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :power;animation-duration :4s ;animation-fill-mode :forwards;}
+.ill {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :ill;animation-duration :4s ;animation-fill-mode :forwards;}
+.fig {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :fig;animation-duration :4s ;animation-fill-mode :forwards;}
+.mpl {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :mpl;animation-duration :4s ;animation-fill-mode :forwards;}
 @keyframes python {
   from {width:0%;}
   to {width:80%;}
@@ -1301,7 +1315,43 @@ body {
 }
 @keyframes go {
   from{ width :0% ;}
+  to{ width :30%; }
+}
+@keyframes cp {
+  from{ width :0% ;}
   to{ width :20%; }
+}
+@keyframes torch {
+  from{ width :0% ;}
+  to{ width :20%; }
+}
+@keyframes prompt {
+  from{ width :0% ;}
+  to{ width :60%; }
+}
+@keyframes word {
+  from{ width :0% ;}
+  to{ width :60%; }
+}
+@keyframes excel {
+  from{ width :0% ;}
+  to{ width :40%; }
+}
+@keyframes power {
+  from{ width :0% ;}
+  to{ width :50%; }
+}
+@keyframes ill {
+  from{ width :0% ;}
+  to{ width :30%; }
+}
+@keyframes fig {
+  from{ width :0% ;}
+  to{ width :20%; }
+}
+@keyframes mpl {
+  from{ width :0% ;}
+  to{ width :40%; }
 }
 
 /* Contact */
@@ -2094,21 +2144,29 @@ body {
   #about > div > div > div {
     margin-bottom: 4rem;
   }
+  #about > div > div > div > div.skill__container > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   #about > div > div > div > div.skill__container > div > div {
-    padding: 0;
-    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem 0;
   }
 
-  #about > div > div > div > div.skill__container > div > div:nth-child(1) {
-    padding-right: 1rem;
-  }
-  #about > div > div > div > div.skill__container > div > div:nth-child(2) {
-    padding-left: 1rem;
-  }
+  /*#about > div > div > div > div.skill__container > div > div:nth-child(1) {*/
+  /*  padding-right: 1rem;*/
+  /*}*/
+  /*#about > div > div > div > div.skill__container > div > div:nth-child(2) {*/
+  /*  padding-left: 1rem;*/
+  /*}*/
 
   #about > div > div > div > div.skill__container > h3 {
+    margin-top: 1rem;
     margin-bottom: 0;
+  }
+
+  #about > div > div > div > div.skill__container > h3 > a {
+    padding: 0.1rem;
   }
 
   .about__info {
@@ -2211,6 +2269,10 @@ body {
 
   #research > div {
     padding-bottom: 5rem;
+  }
+
+  #research > div > div.research__interests.container > ul > * {
+    margin: .2rem;
   }
 
   /* Courses */
