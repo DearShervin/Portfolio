@@ -566,6 +566,11 @@ progress[value]::-webkit-progress-value {
   width: 34rem;
   height: auto;
 }
+#about > div > div > div > div.skill__container > div > div > p {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* --------- Popping out effect ---------------- */
 #home > div > div.home__content.grid > div.home__data,
