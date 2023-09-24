@@ -445,6 +445,14 @@ body > nav > .light-bulbs > img:nth-child(37) {
   transform: translate(43.75rem, -8.75rem) rotate(30deg);
 }
 
+body > nav > a {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  color: #001219;
+  font-size: .7rem;
+}
+
 /* ----------------------- Popout Contact ----------------------------- */
 #backdrop {
   position: fixed;
