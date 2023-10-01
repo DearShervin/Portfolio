@@ -159,36 +159,51 @@ function showPopup() {
     backdrop.classList.remove('fade-out');
   }, 1700);
 }
+
+// ------- Email validation ------->
+function validateEmail(email) {
+  let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
 function sendEmail() {
 
   let name = document.getElementById("contact__name").value;
   let email = document.getElementById("contact__email").value;
   let message = document.getElementById("contact__message").value;
 
+  let isEmailValid = validateEmail(email);
+
   if (name === "" || email === "" || message === "") {
     alert("Please fill in all the fields before sending the email.");
     return;
   }
 
-  let data = {
-    name: name,
-    email: email,
-    message: message,
-  };
+  if (isEmailValid) {
+    let data = {
+      name: name,
+      email: email,
+      message: message,
+    };
 
-  const serviceID = "service_zopljre";
-  const templateID = "template_xkei7il";
+    const serviceID = "service_zopljre";
+    const templateID = "template_xkei7il";
 
-  emailjs
-    .send(serviceID, templateID, data)
-    .then((res) => {
-      document.getElementById("contact__name").value = "";
-      document.getElementById("contact__email").value = "";
-      document.getElementById("contact__message").value = "";
-      console.log(res);
-      showPopup()
-    })
-    .catch((err) => console.log(err));
+    if (validateEmail(email) == true) {
+      emailjs
+          .send(serviceID, templateID, data)
+          .then((res) => {
+            document.getElementById("contact__name").value = "";
+            document.getElementById("contact__email").value = "";
+            document.getElementById("contact__message").value = "";
+            console.log(res);
+            showPopup()
+          })
+          .catch((err) => console.log(err));
+    }
+  } else {
+    alert("Invalid email address");
+  }
 }
 
 
