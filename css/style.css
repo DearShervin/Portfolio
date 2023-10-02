@@ -515,12 +515,18 @@ body > nav > a {
   transform: translate(-50%, -50%);
 }
 
+#loader > h1 > img {
+  height: 12rem;
+  width: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 progress {
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  ;
 }
 
 progress[value] {
@@ -529,8 +535,8 @@ progress[value] {
   appearance: none;
 
   /* Set the width and height */
-  width: 80px;
-  height: 4px;
+  width: 7rem;
+  height: 0.25rem;
 }
 
 /* Set the background color of the progress bar */
@@ -543,6 +549,18 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
   background-color: var(--bgColorMenu);
   border-radius: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  #loader > h1 > img {
+    height: 8rem;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  progress[value] {
+    width: 6rem;
+    height: 0.25rem;
+  }
 }
 
 /* ------------------------------------------------------- */

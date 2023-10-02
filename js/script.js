@@ -91,7 +91,6 @@ document.querySelector("#contact__button").addEventListener("click", function() 
 let loader = document.getElementById("loader");
 let loaderText = loader.querySelector("h1");
 let progressBar = document.getElementById("progressBar");
-// let website = document.getElementById("website");
 
 let progress = 0;
 
