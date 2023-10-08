@@ -1330,15 +1330,15 @@ body {
 }
 @keyframes r {
   from {width:0%;}
-  to {width:10%;}
+  to {width:20%;}
 }
 @keyframes numpy {
   from {width:0%;}
-  to {width:60%;}
+  to {width:80%;}
 }
 @keyframes pandas {
   from {width:0%;}
-  to {width:50%;}
+  to {width:60%;}
 }
 @keyframes git {
   from {width:0%;}
@@ -1382,7 +1382,7 @@ body {
 }
 @keyframes mpl {
   from{ width :0% ;}
-  to{ width :40%; }
+  to{ width :50%; }
 }
 
 /* Contact */
@@ -2168,6 +2168,10 @@ body {
   #home > div > div.home__content.grid > div.home__data {
     width: 22rem;
     height: 26rem;
+  }
+
+  #home > div > div.home__content.grid > div.home__data > p {
+    margin-bottom: 1rem;
   }
 
   /* About */
