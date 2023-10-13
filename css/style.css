@@ -1326,7 +1326,7 @@ body {
 }
 @keyframes scikit {
   from {width:0%;}
-  to {width:40%;}
+  to {width:50%;}
 }
 @keyframes r {
   from {width:0%;}
@@ -1362,7 +1362,7 @@ body {
 }
 @keyframes word {
   from{ width :0% ;}
-  to{ width :60%; }
+  to{ width :70%; }
 }
 @keyframes excel {
   from{ width :0% ;}
