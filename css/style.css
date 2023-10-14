@@ -1674,6 +1674,22 @@ body {
   border-radius: 0.5rem;
 }
 
+#courses > div.this__sem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#courses > div.this__sem > * {
+  font-size: .9rem;
+  box-shadow: none;
+}
+
+#courses > div.this__sem > p > span {
+  font-weight: 500;
+}
+
 /* Media Queries */
 
 /* Small Devices */
