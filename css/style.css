@@ -810,7 +810,7 @@ body {
 /* Layout */
 
 .container {
-  max-width: 48rem;
+  max-width: 50rem;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -1535,6 +1535,7 @@ body {
   font-size: var(--font-large);
   font-weight: var(--font-weight-regular);
   margin-bottom: 0;
+  transform: translateY(.7rem);
 }
 
 .research h1.section__title {
@@ -1615,6 +1616,10 @@ body {
 #research {
   padding-top: .5rem;
   padding-bottom: 2rem;
+}
+
+#research > div > div.research__interests.container > p > * {
+  display: inline-block;
 }
 
 /* Courses Page  */
