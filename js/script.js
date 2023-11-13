@@ -98,18 +98,15 @@ let progress = 0;
 // let colors = ["#cffff1", "#bfbff8", "#ffb457"];
 // "#ffe797",, "#068FFF"
 
+let startTime = Date.now();
 let loadingInterval = setInterval(() => {
-  progress += 1;
-  // loaderText.textContent = progress + "%";
-
-  // Update the background color of the loader (if needed - I removed this for eyes' sake)
-  // let colorIndex = Math.floor(progress / (100 / colors.length));
-  // loader.style.backgroundColor = colors[colorIndex];
+  let elapsedTime = Date.now() - startTime;
+  let progress = Math.floor(elapsedTime / 20);
 
   // Update the value of the progress bar
   progressBar.value = progress;
 
-  if (progress === 110) {
+  if (progress >= 110) {
     clearInterval(loadingInterval);
 
     // Add the fadeOut class to the loader
