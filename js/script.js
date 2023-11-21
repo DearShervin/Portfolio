@@ -328,3 +328,7 @@ burger.addEventListener("click", navToggle);
 //     infoIcon.style.color = bgColorsBody[currentButtonIndex];
 //   }
 // });
+
+document.querySelector("#home > div > div.scroll-downs > div > div").addEventListener('click', () => {
+  buttons[1].click()
+})

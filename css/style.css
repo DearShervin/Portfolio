@@ -874,6 +874,10 @@ body {
   animation-iteration-count: infinite;
 }
 
+#home > div > div.scroll-downs > div > div:hover {
+  cursor: pointer;
+}
+
 #home > div > div.scroll-downs > div > div > img {
   height: 24px;
   transform: rotate(180deg);
