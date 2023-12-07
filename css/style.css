@@ -607,6 +607,7 @@ body > menu,
 #research > div > div.research__interests.container,
 #courses > div > *,
 #contact > div.contact__container.container.grid,
+#projects > div,
 #contact__button:hover,
 #about > div > div > div > div.about__buttons > a.button.button--flex:hover,
 #about > div > div > div > div.about__buttons > a:nth-child(2):hover,
@@ -1322,7 +1323,7 @@ body {
 }
 @keyframes matlab {
   from {width:0%;}
-  to {width:20%;}
+  to {width:40%;}
 }
 @keyframes tensorflow {
   from {width:0%;}
@@ -1354,7 +1355,7 @@ body {
 }
 @keyframes cp {
   from{ width :0% ;}
-  to{ width :20%; }
+  to{ width :30%; }
 }
 @keyframes torch {
   from{ width :0% ;}
@@ -1523,7 +1524,7 @@ body {
 
 .research__container.container,
 .research__interests.container {
-  max-width: 55.625rem;
+  max-width: 59rem;
 }
 
 #research > div > div.research__interests.container > ul > li {
@@ -1626,6 +1627,17 @@ body {
   display: inline-block;
 }
 
+#research > div > div.research__interests.container > ul > li {
+  margin: .1rem;
+}
+
+#research > div > div.research__container.container > ul:nth-child(4) > li:nth-child(1) > div > span:nth-child(2),
+#research > div > div.research__container.container > ul:nth-child(4) > li:nth-child(2) > span:nth-child(2),
+#research > div > div.research__container.container > ul:nth-child(2) > div > li > span,
+#research > div > div.research__container.container > ul:nth-child(2) > li > span {
+  font-weight: 600;
+}
+
 /* Courses Page  */
 
 #courses > h1 {
@@ -1697,6 +1709,34 @@ body {
 
 #courses > div.this__sem > p > span {
   font-weight: 500;
+}
+/*------------Projects and Presentations---------*/
+#projects > h1 {
+  margin-bottom: 1rem;
+}
+
+#projects > div {
+  background-color: #A8DADC;
+  display: block;
+  border: 2px solid var(--bgColorMenu);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+#projects > div > div > h2 {
+  margin-bottom: .7rem;
+}
+#projects > div > div {
+  margin-bottom: 1rem;
+}
+
+#projects > div > div.__Presentations > ul > li > span,
+#projects > div > div.__projects > ul > li > span {
+  font-weight: 600;
+}
+
+#projects > div > div.__projects > ul > li {
+  margin: .3rem;
 }
 
 /* Media Queries */
