@@ -733,6 +733,58 @@ body {
   background-color: var(--bgColorItem);
 }
 
+.tooltip {
+  position: absolute;
+  top: 15px; /* Adjust tooltip's position */
+  left: 220%; /* Adjust tooltip's position */
+  transform: translateX(-50%);
+  background-color: #333; /* Adjust tooltip background color */
+  color: #fff; /* Adjust tooltip text color */
+  padding: 5px 10px; /* Adjust padding */
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease; /* Adjust transition duration and timing */
+  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+}
+
+.tooltip_exp {
+  position: absolute;
+  top: 15px; /* Adjust tooltip's position */
+  left: 270%; /* Adjust tooltip's position */
+  transform: translateX(-50%);
+  background-color: #333; /* Adjust tooltip background color */
+  color: #fff; /* Adjust tooltip text color */
+  padding: 5px 10px; /* Adjust padding */
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease; /* Adjust transition duration and timing */
+  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+}
+
+.tooltip_2 {
+  position: absolute;
+  top: 15px; /* Adjust tooltip's position */
+  left: 240%; /* Adjust tooltip's position */
+  transform: translateX(-50%);
+  background-color: #333; /* Adjust tooltip background color */
+  color: #fff; /* Adjust tooltip text color */
+  padding: 5px 10px; /* Adjust padding */
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease; /* Adjust transition duration and timing */
+  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+}
+
+.menu__item:hover .tooltip,
+.menu__item:hover .tooltip_exp,
+.menu__item:hover .tooltip_2{
+  opacity: 1;
+}
+
+
 .icon {
   width: 2.6em;
   height: 2.6em;
@@ -1829,6 +1881,12 @@ body {
     background-color: var(--bgColorItem);
   }
 
+  .menu__item:hover .tooltip,
+  .menu__item:hover .tooltip_exp,
+  .menu__item:hover .tooltip_2{
+    opacity: 0;
+  }
+
   .icon {
     width: 3.6em;
     height: 3.6em;
@@ -2044,6 +2102,12 @@ body {
     opacity: 0;
     display: none;
     animation: none;
+  }
+
+  .menu__item:hover .tooltip,
+  .menu__item:hover .tooltip_exp,
+  .menu__item:hover .tooltip_2{
+    opacity: 0;
   }
 
   /* ---- Nav Bar ----- */
