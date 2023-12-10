@@ -735,46 +735,46 @@ body {
 
 .tooltip {
   position: absolute;
-  top: 15px; /* Adjust tooltip's position */
-  left: 220%; /* Adjust tooltip's position */
+  top: 15px;
+  left: 220%;
   transform: translateX(-50%);
-  background-color: #333; /* Adjust tooltip background color */
-  color: #fff; /* Adjust tooltip text color */
-  padding: 5px 10px; /* Adjust padding */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease; /* Adjust transition duration and timing */
+  transition: opacity 0.3s ease;
   box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
 }
 
 .tooltip_exp {
   position: absolute;
-  top: 15px; /* Adjust tooltip's position */
-  left: 270%; /* Adjust tooltip's position */
+  top: 15px;
+  left: 270%;
   transform: translateX(-50%);
-  background-color: #333; /* Adjust tooltip background color */
-  color: #fff; /* Adjust tooltip text color */
-  padding: 5px 10px; /* Adjust padding */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease; /* Adjust transition duration and timing */
+  transition: opacity 0.3s ease;
   box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
 }
 
 .tooltip_2 {
   position: absolute;
-  top: 15px; /* Adjust tooltip's position */
-  left: 240%; /* Adjust tooltip's position */
+  top: 15px;
+  left: 240%;
   transform: translateX(-50%);
-  background-color: #333; /* Adjust tooltip background color */
-  color: #fff; /* Adjust tooltip text color */
-  padding: 5px 10px; /* Adjust padding */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease; /* Adjust transition duration and timing */
+  transition: opacity 0.3s ease;
   box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
 }
 
