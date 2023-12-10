@@ -1039,6 +1039,8 @@ body {
 
 #contact__button:hover {
   background-color: var(--bgColorMenu);
+  cursor: pointer;
+  user-select: none;
 }
 
 #contact > div.contact__container.container.grid > div > div.home__social_2 > * {

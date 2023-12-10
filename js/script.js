@@ -332,3 +332,7 @@ burger.addEventListener("click", navToggle);
 document.querySelector("#home > div > div.scroll-downs > div > div").addEventListener('click', () => {
   buttons[1].click()
 })
+
+document.querySelector("#contact__button").addEventListener('click', () => {
+  buttons[5].click()
+})
