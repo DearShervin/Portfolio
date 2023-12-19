@@ -1345,7 +1345,7 @@ body {
 
 .python {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: python; animation-duration:4s; animation-fill-mode: forwards;}
 .javascript {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: javascript; animation-duration:4s; animation-fill-mode: forwards;}
-.htmlcss {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: htmlcss; animation-duration:4s; animation-fill-mode: forwards;}
+.__html {width:0%; height:1px; background-color:var(--bgColorMenu); animation-name: __html; animation-duration:4s; animation-fill-mode: forwards;}
 .matlab {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :matlab; animation-duration :4s; animation-fill-mode :forwards;}
 .tensorflow {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :tensorflow; animation-duration :4s; animation-fill-mode :forwards;}
 .scikit {width :0%; height :1px; background-color:var(--bgColorMenu); animation-name :scikit; animation-duration :4s; animation-fill-mode :forwards;}
@@ -1356,7 +1356,7 @@ body {
 .go {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :go;animation-duration :4s ;animation-fill-mode :forwards;}
 .torch {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :torch;animation-duration :4s ;animation-fill-mode :forwards;}
 .cp {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :cp;animation-duration :4s ;animation-fill-mode :forwards;}
-.prompt {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :prompt;animation-duration :4s ;animation-fill-mode :forwards;}
+.css {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :css;animation-duration :4s ;animation-fill-mode :forwards;}
 .word {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :word;animation-duration :4s ;animation-fill-mode :forwards;}
 .excel {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :excel;animation-duration :4s ;animation-fill-mode :forwards;}
 .power {width :0%; height :1px;background-color:var(--bgColorMenu);animation-name :power;animation-duration :4s ;animation-fill-mode :forwards;}
@@ -1371,9 +1371,9 @@ body {
   from {width:0%;}
   to {width:60%;}
 }
-@keyframes htmlcss {
+@keyframes __html {
   from {width:0%;}
-  to {width:80%;}
+  to {width:90%;}
 }
 @keyframes matlab {
   from {width:0%;}
@@ -1401,7 +1401,7 @@ body {
 }
 @keyframes git {
   from {width:0%;}
-  to {width:50%;}
+  to {width:60%;}
 }
 @keyframes go {
   from{ width :0% ;}
@@ -1415,9 +1415,9 @@ body {
   from{ width :0% ;}
   to{ width :20%; }
 }
-@keyframes prompt {
+@keyframes css {
   from{ width :0% ;}
-  to{ width :60%; }
+  to{ width :70%; }
 }
 @keyframes word {
   from{ width :0% ;}
@@ -1425,11 +1425,11 @@ body {
 }
 @keyframes excel {
   from{ width :0% ;}
-  to{ width :40%; }
+  to{ width :60%; }
 }
 @keyframes power {
   from{ width :0% ;}
-  to{ width :50%; }
+  to{ width :80%; }
 }
 @keyframes ill {
   from{ width :0% ;}
