@@ -246,24 +246,25 @@ body > nav > div > div.social-links > div > a:hover {
   0% {
     transform: translate(0, 0) scale(1);
   }
-  20% {
+  10% {
     transform: translate(.15rem, -.15rem) scale(1.2);
   }
-  40% {
+  20% {
     transform: translate(0, 0) scale(1);
   }
-  50% {
+  25% {
     transform: translate(.15rem, -.15rem) scale(1.2);
+  }
+  50% {
+    transform: translate(0, 0) scale(1);
   }
   100% {
     transform: translate(0, 0) scale(1);
   }
 }
 
-body > nav > div.speech > div.more > p > img:hover {
-  animation-name: heart;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+body > nav > div.speech > div.more > p > img {
+  animation: heart 2s infinite;
 }
 
 body > nav > div > div.social-links > div > a > img {
@@ -1661,13 +1662,12 @@ body {
 }
 
 #research > div > div.research__interests.container > ul > * {
-  background-color: var(--clr-txt-bg);
+  /*background-color: var(--clr-txt-bg);*/
   border-radius: .5rem;
   margin: 0 .5rem;
 }
 
 #research > div > div.research__interests.container > ul > * > i::before {
-  background-color: var(--clr-icon-1);
   border-radius: .4rem;
 }
 
