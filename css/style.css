@@ -19,19 +19,35 @@
   /*--clr-icon-4: #e0b115;*/
   /*--clr-icon-5: #65ddb7;*/
 
+  /*------------Color Palette One-------------*/
   --clr-txt-1: #001219;
 
+  --clr-nav: #ff979d;
+
   --clr-body-1: #F1FAEE;
-  --clr-body-2: #91c8e4;
-  --clr-body-3: #bfbff8;
-  --clr-body-4: #ffe797;
-  --clr-body-5: #cffff1;
+
+  --clr-bg-1: #A8DADC;
+  --clr-bg-2: #f8828a;
 
   --clr-icon-1: #E63946;
-  --clr-icon-2: #E63946;
-  --clr-icon-3: #E63946;
-  --clr-icon-4: #E63946;
-  --clr-icon-5: #E63946;
+
+  --clr-txt-bg: #ffa1aa;
+
+
+  /*-------------------------*/
+  /*--clr-txt-1: #001219;*/
+
+  /*--clr-body-1: #F1FAEE;*/
+  /*--clr-body-2: #91c8e4;*/
+  /*--clr-body-3: #bfbff8;*/
+  /*--clr-body-4: #ffe797;*/
+  /*--clr-body-5: #cffff1;*/
+
+  /*--clr-icon-1: #E63946;*/
+  /*--clr-icon-2: #E63946;*/
+  /*--clr-icon-3: #E63946;*/
+  /*--clr-icon-4: #E63946;*/
+  /*--clr-icon-5: #E63946;*/
 
   --font-small: 0.75rem;
   --font-medium: 1rem;
@@ -64,7 +80,7 @@
   --z-modal: 1000;
 
   /*--bgColorMenu: #1d1d27;*/
-  --bgColorMenu: #001219;
+  --bgColorMenu: var(--clr-txt-1);
   --duration: 0.7s;
 
   --body-font: "Open Sans", sans-serif;
@@ -164,7 +180,7 @@ body > nav {
   /*left: 4rem;*/
   width: 100%;
   height: 100%;
-  background: #ff979d;
+  background: var(--clr-nav);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -449,7 +465,7 @@ body > nav > a {
   position: absolute;
   top: 0;
   left: 1%;
-  color: #001219;
+  color: var(--clr-txt-1);
   font-size: .7rem;
 }
 
@@ -504,7 +520,7 @@ body > nav > a {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #F1FAEE;
+  background-color: var(--clr-body-1);
   text-align: center;
   transition: background-color .5s ease-in-out;
 }
@@ -570,7 +586,7 @@ progress[value]::-webkit-progress-value {
 #research > div > div.research__interests.container,
 #about > div > div > div,
 #contact > div.contact__container.container.grid {
-  background-color: #A8DADC;
+  background-color: var(--clr-bg-1);
 }
 
 #about > div > div > div {
@@ -580,12 +596,12 @@ progress[value]::-webkit-progress-value {
 }
 
 #about > div > div > div > div.skill__container > div > div > div > * {
-  background-color: #E63946;
+  background-color: var(--clr-icon-1);
   border: none;
 }
 
 #home > div > div.home__content.grid > div.home__data {
-  background-color: #A8DADC;
+  background-color: var(--clr-bg-1);
   padding: 1.3rem;
   border: 2px solid;
   border-radius: .5rem;
@@ -626,8 +642,7 @@ body > menu > button.menu__item.active::before {
 
 
 #home > div > div.home__content.grid > div.home__img > img {
-  background: linear-gradient(180deg, #f8828a, transparent);
-  /*background: #f8828a;*/
+  background: linear-gradient(180deg, var(--clr-bg-2), transparent);
   border: 2px solid;
 }
 
@@ -788,7 +803,7 @@ body {
 .icon {
   width: 2.6em;
   height: 2.6em;
-  stroke: #F1FAEE;
+  stroke: var(--clr-body-1);
   fill: transparent;
   stroke-width: 1pt;
   stroke-miterlimit: 10;
@@ -972,7 +987,7 @@ body {
 }
 
 .home__social-link:hover {
-  color: #E63946;
+  color: var(--clr-icon-1);
 }
 
 .home__img {
@@ -1021,7 +1036,7 @@ body {
 
 .button:hover {
   background-color: var(--bgColorMenu);
-  color: #E63946;
+  color: var(--clr-icon-1);
   transform: translateY(-5px);
   transition: 0.3s;
 }
@@ -1044,7 +1059,7 @@ body {
 }
 
 #contact > div.contact__container.container.grid > div > div.home__social_2 > * {
-  background-color: #F1FAEE;
+  background-color: var(--clr-body-1);
 }
 
 #contact > div.contact__container.container.grid > div > div.home__social_2 > *:hover {
@@ -1114,7 +1129,7 @@ body {
 }
 
 #about > div > div > div > div.about__buttons > a:nth-child(2):hover {
-  color: #E63946;
+  color: var(--clr-icon-1);
 }
 
 #about > div > div > div > div.about__buttons > a:nth-child(2) > span {
@@ -1147,7 +1162,7 @@ body {
 .button--flex:nth-child(1):hover,
 #about > div > div > div > div.about__buttons > a:nth-child(2):hover {
   background-color: var(--bgColorMenu);
-  color: #E63946;
+  color: var(--clr-icon-1);
 }
 
 .my__skills {
@@ -1462,7 +1477,7 @@ body {
 
 #contact-form > div.contact__input.grid > *,
 #contact-form > div.contact__content {
-  background-color: #F1FAEE;
+  background-color: var(--clr-body-1);
 }
 
 #contact__name,
@@ -1543,7 +1558,7 @@ body {
   color: var(--bgColorMenu);
 }
 .contact__form a:only-child:hover {
-  color: #E63946;
+  color: var(--clr-icon-1);
   background-color: var(--bgColorMenu);
 }
 
@@ -1565,7 +1580,7 @@ body {
 }
 
 #contact > div > div > div.home__social_2 > *:hover {
-  color: #E63946;
+  color: var(--clr-icon-1);
   background-color: var(--bgColorMenu);
   transform: scale(1.2);
 }
@@ -1630,7 +1645,7 @@ body {
 
 .research__download-pdf a.button:hover {
   background-color: var(--bgColorMenu);
-  color: #E63946;
+  color: var(--clr-icon-1);
 }
 
 .research__download-pdf span {
@@ -1646,13 +1661,13 @@ body {
 }
 
 #research > div > div.research__interests.container > ul > * {
-  background-color: #ffa1aa;
+  background-color: var(--clr-txt-bg);
   border-radius: .5rem;
   margin: 0 .5rem;
 }
 
 #research > div > div.research__interests.container > ul > * > i::before {
-  background-color: #E63946;
+  background-color: var(--clr-icon-1);
   border-radius: .4rem;
 }
 
@@ -1775,7 +1790,7 @@ body {
 }
 
 #projects > div {
-  background-color: #A8DADC;
+  background-color: var(--clr-bg-1);
   display: block;
   border: 2px solid var(--bgColorMenu);
   border-radius: 0.5rem;
@@ -1814,7 +1829,7 @@ body {
   margin: .5rem;
   cursor: pointer;
   border-radius: .5rem;
-  border: 2px solid #E63946;
+  border: 2px solid var(--clr-icon-1);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
