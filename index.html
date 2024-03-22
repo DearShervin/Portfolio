@@ -19,9 +19,12 @@
     <title>Shervin Iranaghideh</title>
 </head>
 <div class="burger">
-    <img src="assets/other-icons/info.png" alt="info">
+<!--    <img src="assets/other-icons/info.png" alt="info">-->
+    <i class="fi fi-rr-info"></i>
 <!--    <img src="assets/up-arrow.png" alt="uparrow">-->
 </div>
+    <button class="__dark" onclick="toggleDarkMode()"><i class="fi fi-br-moon-stars"></i></button>
+
 <body>
   <div id="loader">
 <!--    <h1>0%</h1>-->
@@ -30,12 +33,12 @@
           <progress id="progressBar" value="0" max="100"></progress></h1>
   </div>
   <button class="button button--flex" id="back-to-top" style="display: none;">
-<!--      <i class="fi fi-br-arrow-small-up"></i>-->
-      <img src="assets/other-icons/up-arrow-1.png" style="height: 40px" alt="">
+      <i class="fi fi-rr-arrow-small-up"></i>
+<!--      <img src="assets/other-icons/up-arrow-1.png" style="height: 40px" alt="">-->
   </button>
     <menu class="menu">
     
-        <button class="menu__item active" onclick="openPage(event, 'home')" style="--bgColorItem: #E63946;">
+        <button class="menu__item active" onclick="openPage(event, 'home')">
           <svg class="icon" viewBox="0 0 24 24">
             <path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"/>
 <path d="M9 22V12h6v10M2 10.6L12 2l10 8.6"/>
@@ -43,7 +46,7 @@
           </svg>
         </button>
     
-        <button class="menu__item" onclick="openPage(event, 'about')" style="--bgColorItem: #E63946;">
+        <button class="menu__item" onclick="openPage(event, 'about')">
           <svg class="icon" viewBox="0 0 24 24">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
@@ -51,7 +54,7 @@
             <span class="tooltip">About</span>
         </button>
     
-        <button class="menu__item" onclick="openPage(event, 'research')" style="--bgColorItem: #E63946;">
+        <button class="menu__item" onclick="openPage(event, 'research')">
           <svg class="icon" viewBox="0 0 24 24">
             <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
             <line x1="3" y1="22" x2="21" y2="22"></line>
@@ -59,7 +62,7 @@
             <span class="tooltip_exp">Experience</span>
         </button>
 
-        <button class="menu__item" onclick="openPage(event, 'projects')" style="--bgColorItem: #E63946;">
+        <button class="menu__item" onclick="openPage(event, 'projects')">
         <svg class="icon" viewBox="0 0 24 24">
             <path  d="M3.4,11.9l8.8,4.4l8.4-4.4"/>
             <path  d="M3.4,16.2l8.8,4.5l8.4-4.5"/>
@@ -68,14 +71,14 @@
         <span class="tooltip_2">Projects</span>
     </button>
 
-        <button class="menu__item" onclick="openPage(event, 'courses')" style="--bgColorItem: #E63946;">
+        <button class="menu__item" onclick="openPage(event, 'courses')">
           <svg class="icon" viewBox="0 0 24 24" >
             <line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>
           </svg>
             <span class="tooltip_2">Courses</span>
         </button>
 
-        <button class="menu__item" onclick="openPage(event, 'contact')" style="--bgColorItem:#E63946;" id="contact__menu-button">
+        <button class="menu__item" onclick="openPage(event, 'contact')" id="contact__menu-button">
           <svg class="icon" viewBox="0 0 24 24" >
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
           </svg>
@@ -139,7 +142,8 @@
                 <div class="scroll-downs">
                     <div class="mousey">
                         <div class="scroller">
-                            <img src="assets/other-icons/up-arrow-1.png" alt="arrow">Scroll
+<!--                            <img src="assets/other-icons/up-arrow-1.png" alt="arrow">-->
+                            <i class="fi fi-rr-arrow-small-down"></i>Scroll
                         </div>
                     </div>
                 </div>
@@ -158,7 +162,7 @@
                   I have a good coding and mathematics background, and I can code for hours on end.
                 </p>
                 <div class="about__description">
-                <span class="my__skills">Skills & Tools</span>
+                <span class="my__skills">Skills & Techs</span>
                     <div class="skill__container">
                         <div class="row">
                             <div class="col">
@@ -285,7 +289,7 @@
                         </div>
                     <!-- <div class="skill__bar container"> -->
                     <h3 class="section__subtitle">I also designed and coded this website (<a
-                            href="https://github.com/DearShervin/Portfolio" target="_blank"><span>code<i class="fi fi-rr-arrow-up-right-from-square"></i></span></a>)</h3>
+                            href="https://github.com/DearShervin/Portfolio" class="__link" target="_blank"><span>code<i class="fi fi-rr-arrow-up-right-from-square"></i></span></a>)</h3>
               </div>
 
                 <div class="about__info">
@@ -418,9 +422,9 @@
                   <div class="research__download-pdf">
                       <li class="list__items">
                           <i class="fi fi-rr-arrow-small-right"></i> <span>Multi-commodity Transportation Problems</span>. Mathematical modeling of these problems (MCTP). Introducing a method for solving MCTP using SciPy Python. Making a program with simple UI that solves these problems and also deploying it on HF Spaces for online demo using Gradio Python library.
-                          Supervisor: <a href="https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en" target="_blank">Dr. Farhad Hosseinzadeh Lotfi <i class="fi fi-rr-arrow-up-right-from-square"></i></a>.
-                          (<a href="https://huggingface.co/spaces/DearShevin/MCTP_Gradio" target="_blank">Demo <i class="fi fi-rr-arrow-up-right-from-square"></i></a>) (<a
-                              href="https://github.com/DearShervin/Multi-Commodity-Solver" target="_blank">Code <i class="fi fi-rr-arrow-up-right-from-square"></i></a>)
+                          Supervisor: <a href="https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en" class="__link" target="_blank">Dr. Farhad Hosseinzadeh Lotfi <i class="fi fi-rr-arrow-up-right-from-square"></i></a>.
+                          (<a href="https://huggingface.co/spaces/DearShevin/MCTP_Gradio" class="__link" target="_blank">Demo <i class="fi fi-rr-arrow-up-right-from-square"></i></a>) (<a
+                              href="https://github.com/DearShervin/Multi-Commodity-Solver" class="__link" target="_blank">Code <i class="fi fi-rr-arrow-up-right-from-square"></i></a>)
                       </li>
                       <a download="Solving_MCTP.pdf" href="assets/PDF/Solving_MCTP.pdf" class="button button--flex transportation__pdf" target="_blank">
                           <span class="transportation__pdf-txt">Download</span><i class="fi fi-rr-file-pdf button__icon"></i>
@@ -428,9 +432,9 @@
                   </div>
                   <li class="list__items">
                      <i class="fi fi-rr-arrow-small-right"></i><span>Bachelor's Thesis</span>: I am currently working on creating a Q&A Bot and I'm using the architecture introduced in
-                      <a target="_blank" href="https://arxiv.org/pdf/1503.08895.pdf">End-To-End Memory Networks <i class="fi fi-rr-arrow-up-right-from-square"></i></a> paper. Additionally, I am studying <a href="https://arxiv.org/abs/2106.00737" target="_blank">Implicit Representations of Meaning in Neural Language Models
-                      <a target="_blank" href="https://arxiv.org/abs/2106.00737"><i class="fi fi-rr-arrow-up-right-from-square"></i></a> where I'm following the path of the course
-                      <a href="https://imminent-honey-ff0.notion.site/CS-3730-Fall-2023-aa264409413a4bb386d670d5cd6e8f78" target="_blank">"CS3730 Advance topic in Natural Language Processing" <i class="fi fi-rr-arrow-up-right-from-square"></i></a> taught at Pittsburgh University. My supervisor is <a href="https://scholar.google.com/citations?user=HjHkaiwAAAAJ&hl=en" target="_blank">Dr. Tofigh Allahviranloo <i class="fi fi-rr-arrow-up-right-from-square"></i></a>.
+                      <a target="_blank" class="__link" href="https://arxiv.org/pdf/1503.08895.pdf">End-To-End Memory Networks <i class="fi fi-rr-arrow-up-right-from-square"></i></a> paper. Additionally, I am studying <a href="https://arxiv.org/abs/2106.00737" target="_blank">Implicit Representations of Meaning in Neural Language Models
+                      <a target="_blank" class="__link" href="https://arxiv.org/abs/2106.00737"><i class="fi fi-rr-arrow-up-right-from-square"></i></a> where I'm following the path of the course
+                      <a href="https://imminent-honey-ff0.notion.site/CS-3730-Fall-2023-aa264409413a4bb386d670d5cd6e8f78" class="__link" target="_blank">"CS3730 Advance topic in Natural Language Processing" <i class="fi fi-rr-arrow-up-right-from-square"></i></a> taught at Pittsburgh University. My supervisor is <a href="https://scholar.google.com/citations?user=HjHkaiwAAAAJ&hl=en" class="__link" target="_blank">Dr. Tofigh Allahviranloo <i class="fi fi-rr-arrow-up-right-from-square"></i></a>.
                   </li>
               </ul>
 
@@ -438,14 +442,14 @@
             <ul>
               <li class="list__items">
                 <div><i class="fi fi-rr-arrow-small-right"></i> <span>Linear Programming (Optimization)</span>, SRBIAU, Teaching Assistant under instruction of
-                  <a href="https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en" target="_blank" class="professor">Dr. Farhad Hosseinzadeh Lotfi
+                  <a href="https://scholar.google.com/citations?user=gc_qn8gAAAAJ&hl=en" class="__link" target="_blank" class="professor">Dr. Farhad Hosseinzadeh Lotfi
                     <i class="fi fi-rr-arrow-up-right-from-square"></i></a> (Fall 2023)
-                    Developed practice problems for students, Provided troubleshooting support for students and helped them with solving practice-problems, Conducted 1-hour practice problem-solving sessions. (Course source: <span style="color: darkblue">Linear Programming and Network Flows, Mokhtar Bazaraa, John Jarvis, Hanif Sherali</span>)
+                    Developed practice problems for students, Provided troubleshooting support for students and helped them with solving practice-problems, Conducted 1-hour practice problem-solving sessions. (Course source: <span style="color: var(--clr-bg-2)">Linear Programming and Network Flows, Mokhtar Bazaraa, John Jarvis, Hanif Sherali</span>)
                 </div>
               </li>
               <li class="list__items"><i class="fi fi-rr-arrow-small-right"></i> <span>Calculus 1</span>, SRBIAU, Teaching Assistant under instruction of
-                <a href="https://scholar.google.com/citations?user=mpbXVNoAAAAJ&hl=en" target="_blank">Dr. Somayeh Ghezelahmad <i class="fi fi-rr-arrow-up-right-from-square"></i></a>
-                  (Fall 2023) Provided troubleshooting support for students, Assessed student performance: Evaluated assignments, quizzes, and exams. Managed the final 45 minutes of each class. (Course source: <span style="color: darkblue">James Stewart Calculus 7th Ed</span>)</li>
+                <a href="https://scholar.google.com/citations?user=mpbXVNoAAAAJ&hl=en" class="__link" target="_blank">Dr. Somayeh Ghezelahmad <i class="fi fi-rr-arrow-up-right-from-square"></i></a>
+                  (Fall 2023) Provided troubleshooting support for students, Assessed student performance: Evaluated assignments, quizzes, and exams. Managed the final 45 minutes of each class. (Course source: <span style="color: var(--clr-bg-2)">James Stewart Calculus 7th Ed</span>)</li>
             </ul>
 
           </div>
@@ -468,8 +472,8 @@
 
         <section class="courses section page" id="courses">
           <h1 class="subject__container-title section__title">Related Courses</h1>
-          <h2 class="subject__container-subtitle section__subtitle">With Syllabus <img src="assets/other-icons/student-grades.png"
-                                                                          alt="a+"></h2>
+          <h2 class="subject__container-subtitle section__subtitle">With Syllabus
+              <img src="assets/other-icons/student-grades.png" alt="a+"></h2>
           <div class="subject__container">
               <div class="__subject">
                   <h1 class="subject__title"><i class="fi fi-rr-book"></i> Machine Learning</h1>
@@ -485,7 +489,7 @@
                           Clustering (K-means - Hierarchical Clustering).
                       </i>
                       <li>This course had both math and coding assignments, for coding assignments check my
-                          <a href="https://github.com/DearShervin/ML_Course_Assignments" target="_blank">Github<i class="fi fi-rr-arrow-up-right-from-square"></i></a>
+                          <a href="https://github.com/DearShervin/ML_Course_Assignments" class="__link" target="_blank">Github<i class="fi fi-rr-arrow-up-right-from-square"></i></a>
                       </li>
                   </ul>
               </div>
@@ -600,28 +604,28 @@
                <h2><i class="fi fi-rr-chart-user"></i> Academic Presentations</h2>
                <ul>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Operating Systems:</span> Docker | SRBIAU<a href="assets/projpres/Docker%20Presentation.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (English)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Operating Systems:</span> Docker | SRBIAU<a href="assets/projpres/Docker%20Presentation.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (English)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Artificial Intelligence:</span> 8-Queen Problem | SRBIAU<a href="assets/projpres/8-Queen%20Presentation.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (English)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Artificial Intelligence:</span> 8-Queen Problem | SRBIAU<a href="assets/projpres/8-Queen%20Presentation.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (English)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Networking:</span> Domain Name System (DNS) | SRBIAU<a href="assets/projpres/DNS.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Networking:</span> Domain Name System (DNS) | SRBIAU<a href="assets/projpres/DNS.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Computer Systems:</span> Cryptography | SRBIAU<a href="assets/projpres/Cryptography-Computer%20Systems.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Computer Systems:</span> Cryptography | SRBIAU<a href="assets/projpres/Cryptography-Computer%20Systems.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Basics of Matrices and Linear Algebra:</span> Proof of Theory | SRBIAU<a href="assets/projpres/Proof%20of%20Theory-Basics%20of%20Matrices%20and%20Linear%20Algebra.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Basics of Matrices and Linear Algebra:</span> Proof of Theory | SRBIAU<a href="assets/projpres/Proof%20of%20Theory-Basics%20of%20Matrices%20and%20Linear%20Algebra.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Linear Algebra:</span> Applications in Machine Learning | SRBIAU<a href="assets/projpres/Linear%20Algebra%20&%20ML.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Linear Algebra:</span> Applications in Machine Learning | SRBIAU<a href="assets/projpres/Linear%20Algebra%20&%20ML.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Algebra:</span> Proof of Theory | SRBIAU<a href="assets/projpres/Proof%20of%20Theory-Algebra%20Presentation.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Algebra:</span> Proof of Theory | SRBIAU<a href="assets/projpres/Proof%20of%20Theory-Algebra%20Presentation.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
                    </li>
                    <li>
-                       <i class="fi fi-rr-arrow-small-right"></i><span>Intro to Combinations:</span> Proof of Theory | SRBIAU<a href="assets/projpres/Catalan%20Numbers-Algebra.pdf" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
+                       <i class="fi fi-rr-arrow-small-right"></i><span>Intro to Combinations:</span> Proof of Theory | SRBIAU<a href="assets/projpres/Catalan%20Numbers-Algebra.pdf" class="__link" target="_blank"><i class="fi fi-rr-file-pdf button__icon"></i> (Persian)</a>.
                    </li>
                </ul>
            </div>

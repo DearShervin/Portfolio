@@ -110,6 +110,36 @@ html {
   font-family: var(--body-font);
 }
 
+body.dark-mode {
+  --clr-txt-1: #FFFFFF;
+  --clr-txt-2: #001219;
+
+  --clr-nav: #61DAFB;
+
+  --clr-body-1: #383c44;
+
+  --clr-bg-1: #50555e;
+  --clr-bg-2: #61DAFB;
+
+  --clr-icon-1: #39bcdc;
+
+  .__link {
+    color: var(--clr-bg-2);
+  }
+
+  #home > div > div.scroll-downs > div > div > img {
+    color: #FFFFFF !important;
+  }
+}
+
+.dark-mode div,
+.dark-mode button,
+.dark-mode a {
+  border-color: transparent !important;
+  color: var(--clr-txt-1);
+}
+
+
 html *,
 html *::before,
 html *::after {
@@ -176,6 +206,7 @@ body > div.burger {
 body > nav {
   position: fixed;
   font-family: 'Kalam', cursive;
+  color: #001219FF;
   /*top: 4rem;*/
   /*left: 4rem;*/
   width: 100%;
@@ -193,7 +224,19 @@ body > nav {
   );
 }
 
-body > div.burger > img:nth-child(1) {
+body > nav > div.speech > div.more > p {
+  color: #001219FF;
+}
+
+/*body > div.burger > img:nth-child(1) {*/
+/*  height: 2rem;*/
+/*  width: auto;*/
+/*  outline: none;*/
+/*  border: none;*/
+/*}*/
+
+body > div.burger > i {
+  font-size: 2rem;
   height: 2rem;
   width: auto;
   outline: none;
@@ -615,28 +658,28 @@ progress[value]::-webkit-progress-value {
   justify-content: space-between;
 }
 
-/* --------- Popping out effect ---------------- */
-#home > div > div.home__content.grid > div.home__data,
-#home > div > div.home__content.grid > div.home__img > img,
-body > menu,
-#about > div > div > div,
-#research > div > div.research__container.container,
-#research > div > div.research__interests.container,
-#courses > div > *,
-#contact > div.contact__container.container.grid,
-#projects > div,
-#contact__button:hover,
-#about > div > div > div > div.about__buttons > a.button.button--flex:hover,
-#about > div > div > div > div.about__buttons > a:nth-child(2):hover,
-#research > div > div.research__container.container > ul:nth-child(2) > div > a:hover,
-#submit-button:hover,
-#contact > div.contact__container.container.grid > div > div.home__social_2 > *:hover {
-  box-shadow: 8px 8px 4px grey;
-}
+/*!* --------- Popping out effect ---------------- *!*/
+/*#home > div > div.home__content.grid > div.home__data,*/
+/*#home > div > div.home__content.grid > div.home__img > img,*/
+/*body > menu,*/
+/*#about > div > div > div,*/
+/*#research > div > div.research__container.container,*/
+/*#research > div > div.research__interests.container,*/
+/*#courses > div > *,*/
+/*#contact > div.contact__container.container.grid,*/
+/*#projects > div,*/
+/*#contact__button:hover,*/
+/*#about > div > div > div > div.about__buttons > a.button.button--flex:hover,*/
+/*#about > div > div > div > div.about__buttons > a:nth-child(2):hover,*/
+/*#research > div > div.research__container.container > ul:nth-child(2) > div > a:hover,*/
+/*#submit-button:hover,*/
+/*#contact > div.contact__container.container.grid > div > div.home__social_2 > *:hover {*/
+/*  box-shadow: 8px 8px 4px grey;*/
+/*}*/
 
-body > menu > button.menu__item.active::before {
-  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
-}
+/*body > menu > button.menu__item.active::before {*/
+/*  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);*/
+/*}*/
 
 /* ------------------------------------------------------- */
 
@@ -646,6 +689,7 @@ body > menu > button.menu__item.active::before {
   background: linear-gradient(180deg, var(--clr-bg-2), transparent);
   border: 2px solid;
 }
+
 
 body {
   margin: 0 0 var(--header-height) 0;
@@ -673,6 +717,7 @@ body {
 }
 
 #back-to-top {
+  font-size: 2rem;
   position: fixed;
   bottom: 4rem;
   right: 4rem;
@@ -706,7 +751,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--bgColorMenu);
+  background-color: var(--clr-txt-1);
   border-radius: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -746,7 +791,10 @@ body {
 
 .menu__item.active::before {
   transform: scale(1);
-  background-color: var(--bgColorItem);
+}
+
+body > menu > button.menu__item.active::before {
+  background: var(--clr-icon-1);
 }
 
 .tooltip {
@@ -754,14 +802,14 @@ body {
   top: 15px;
   left: 220%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: var(--clr-icon-1);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+  /*box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);*/
 }
 
 .tooltip_exp {
@@ -769,14 +817,14 @@ body {
   top: 15px;
   left: 270%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: var(--clr-icon-1);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+  /*box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);*/
 }
 
 .tooltip_2 {
@@ -784,14 +832,14 @@ body {
   top: 15px;
   left: 240%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: var(--clr-icon-1);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);
+  /*box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.7);*/
 }
 
 .menu__item:hover .tooltip,
@@ -832,7 +880,7 @@ body {
   position: absolute;
   clip-path: url(#menu);
   will-change: transform;
-  background-color: var(--bgColorMenu);
+  background-color: var(--clr-txt-1);
   transition: transform var(--timeOut, var(--duration));
 }
 
@@ -947,10 +995,15 @@ body {
   cursor: pointer;
 }
 
-#home > div > div.scroll-downs > div > div > img {
-  height: 24px;
-  transform: rotate(180deg);
+/*#home > div > div.scroll-downs > div > div > img {*/
+/*  height: 24px;*/
+/*  transform: rotate(180deg);*/
+/*}*/
+
+#home > div > div.scroll-downs > div > div > i {
+  font-size: 1.5rem;
 }
+
 
 /* Home */
 
@@ -984,7 +1037,7 @@ body {
 
 .home__social-link {
   font-size: 1.25rem;
-  color: var(--bgColorMenu);
+  color: var(--clr-txt-1);
 }
 
 .home__social-link:hover {
@@ -1064,9 +1117,32 @@ body {
 }
 
 #contact > div.contact__container.container.grid > div > div.home__social_2 > *:hover {
-  background-color: var(--bgColorMenu);
+  background-color: var(--clr-txt-1);
 }
 
+body > nav > div.speech > div.social-links > div > * {
+  color: var(--clr-txt-2);
+}
+
+.__dark {
+  position: fixed;
+  top: 5.5%;
+  left: 3.5%;
+  z-index: 100;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 3px solid var(--clr-txt-1);
+}
+
+body > button.__dark > .fi {
+  transform: translateY(.15rem);
+}
 
 /* About */
 
@@ -1157,7 +1233,7 @@ body {
 .button--flex:nth-child(1),
 #about > div > div > div > div.about__buttons > a:nth-child(2) {
   background-color: var(--clr-body-1);
-  color: var(--bgColorMenu);
+  color: var(--clr-txt-1);
 }
 
 .button--flex:nth-child(1):hover,
@@ -1517,7 +1593,11 @@ body {
 
 .contact__subtitle {
   font-size: var(--small-font-size);
-  color: var(--bgColorMenu);
+  color: var(--clr-txt-1);
+}
+
+#contact > div.contact__container.container.grid > div > div > i {
+  color: var(--clr-txt-1);
 }
 
 .contact__content {
@@ -1530,7 +1610,7 @@ body {
 
 .contact__label {
   font-size: var(--smaller-font-size);
-  color: var(--bgColorMenu);
+  color: var(--clr-txt-1);
 }
 
 .contact__input {
@@ -1543,6 +1623,15 @@ body {
   outline: none;
   /*padding: 0.25rem 0.5rem 0.5rem 0;*/
   resize: none;
+  color: var(--clr-txt-1);
+}
+
+#submit-button {
+  color: var(--clr-txt-1);
+}
+
+#submit-button:hover {
+  color: var(--clr-icon-1);
 }
 
 .copy {
@@ -1583,7 +1672,7 @@ body {
 #contact > div > div > div.home__social_2 > *:hover {
   color: var(--clr-icon-1);
   background-color: var(--bgColorMenu);
-  transform: scale(1.2);
+  transform: translateY(-5px);
 }
 
 #contact > div.contact__container.container.grid > div > * {
@@ -2098,6 +2187,13 @@ body {
     display: block;
     padding-bottom: 4rem;
   }
+  /* Dark Mode */
+
+  .__dark {
+    top: 1%;
+    left: 1%;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -2548,6 +2644,14 @@ body {
   #projects > div {
     padding-bottom: 4rem;
   }
+
+  /* Dark Mode */
+
+  .__dark {
+    top: 1%;
+    left: 2%;
+  }
+
 
 }
 

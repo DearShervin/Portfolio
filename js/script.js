@@ -21,7 +21,7 @@ function clickItem(item, index) {
   }
 
   item.classList.add("active");
-  body.style.backgroundColor = bgColorsBody[index];
+  // body.style.backgroundColor = bgColorsBody[index];
   activeItem = item;
   offsetMenuBorder(activeItem, menuBorder);
 }
@@ -336,3 +336,22 @@ document.querySelector("#home > div > div.scroll-downs > div > div").addEventLis
 document.querySelector("#contact__button").addEventListener('click', () => {
   buttons[5].click()
 })
+
+// Dark Mode
+
+function toggleDarkMode() {
+  const body = document.body;
+  const buttonIcon = document.querySelector('.__dark i');
+
+  const isDarkMode = body.classList.contains('dark-mode');
+
+  if (!isDarkMode) {
+    body.classList.add('dark-mode');
+    buttonIcon.classList.remove('fi-br-moon-stars');
+    buttonIcon.classList.add('fi-br-brightness');
+  } else {
+    body.classList.remove('dark-mode');
+    buttonIcon.classList.remove('fi-br-brightness');
+    buttonIcon.classList.add('fi-br-moon-stars');
+  }
+}
