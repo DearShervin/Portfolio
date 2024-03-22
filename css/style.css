@@ -1124,7 +1124,7 @@ body > nav > div.speech > div.social-links > div > * {
   color: var(--clr-txt-2);
 }
 
-.__dark {
+body > button.__dark {
   position: fixed;
   top: 5.5%;
   left: 3.5%;
@@ -2189,7 +2189,7 @@ body > button.__dark > .fi {
   }
   /* Dark Mode */
 
-  .__dark {
+  body > button.__dark {
     top: 1%;
     left: 1%;
   }
@@ -2647,7 +2647,7 @@ body > button.__dark > .fi {
 
   /* Dark Mode */
 
-  .__dark {
+  body > button.__dark {
     top: 1%;
     left: 2%;
   }
