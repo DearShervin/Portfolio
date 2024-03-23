@@ -355,5 +355,3 @@ function toggleDarkMode() {
     buttonIcon.classList.add('fi-br-moon-stars');
   }
 }
-
-document.querySelector(".__dark").addEventListener("click", toggleDarkMode)
