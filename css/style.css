@@ -1124,7 +1124,7 @@ body > nav > div.speech > div.social-links > div > * {
   color: var(--clr-txt-2);
 }
 
-button.__dark {
+#__dark {
   position: fixed;
   top: 5.5%;
   left: 3.5%;
@@ -1140,11 +1140,11 @@ button.__dark {
   border: 3px solid var(--clr-txt-1);
 }
 
-button.__dark > .fi {
+#__dark > .fi {
   transform: translateY(.15rem);
 }
 
-button.__dark:hover {
+#__dark:hover {
   cursor: pointer;
 }
 
@@ -2651,7 +2651,7 @@ button.__dark:hover {
 
   /* Dark Mode */
 
-  button.__dark {
+  #__dark {
     top: 1%;
     left: 2%;
   }
