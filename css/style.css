@@ -1144,6 +1144,10 @@ body > button.__dark > .fi {
   transform: translateY(.15rem);
 }
 
+body > button.__dark:hover {
+  cursor: pointer;
+}
+
 /* About */
 
 #about > div > div > div > div.about__info > * > span.about__info-name {
