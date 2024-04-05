@@ -33,6 +33,10 @@
 
   --clr-txt-bg: #ffa1aa;
 
+  --clr-w: #F1FAEEFF;
+
+  --clr-b: #001219FF;
+
 
   /*-------------------------*/
   /*--clr-txt-1: #001219;*/
@@ -751,7 +755,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--clr-txt-1);
+  background-color: var(--clr-b);
   border-radius: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -852,7 +856,7 @@ body > menu > button.menu__item.active::before {
 .icon {
   width: 2.6em;
   height: 2.6em;
-  stroke: var(--clr-body-1);
+  stroke: var(--clr-w);
   fill: transparent;
   stroke-width: 1pt;
   stroke-miterlimit: 10;
