@@ -87,38 +87,38 @@ document.querySelector("#contact__button").addEventListener("click", function() 
 // });
 
 // ========================== Loading Page ================>
-//
-// let loader = document.getElementById("loader");
-// let loaderText = loader.querySelector("h1");
-// let progressBar = document.getElementById("progressBar");
-//
-// let progress = 0;
-//
-// // Define the colors for the background animation
-// // let colors = ["#cffff1", "#bfbff8", "#ffb457"];
-// // "#ffe797",, "#068FFF"
-//
-// let startTime = Date.now();
-// let loadingInterval = setInterval(() => {
-//   let elapsedTime = Date.now() - startTime;
-//   let progress = Math.floor(elapsedTime / 20);
-//
-//   // Update the value of the progress bar
-//   progressBar.value = progress;
-//
-//   if (progress >= 110) {
-//     clearInterval(loadingInterval);
-//
-//     // Add the fadeOut class to the loader
-//     loader.classList.add('fadeOut');
-//
-//     // Remove the loader after the animation has completed
-//     setTimeout(() => {
-//       loader.parentNode.removeChild(loader);
-//     }, 1000); // The duration of the animation in milliseconds
-//   }
-//
-// }, 20);
+
+let loader = document.getElementById("loader");
+let loaderText = loader.querySelector("h1");
+let progressBar = document.getElementById("progressBar");
+
+let progress = 0;
+
+// Define the colors for the background animation
+// let colors = ["#cffff1", "#bfbff8", "#ffb457"];
+// "#ffe797",, "#068FFF"
+
+let startTime = Date.now();
+let loadingInterval = setInterval(() => {
+  let elapsedTime = Date.now() - startTime;
+  let progress = Math.floor(elapsedTime / 20);
+
+  // Update the value of the progress bar
+  progressBar.value = progress;
+
+  if (progress >= 110) {
+    clearInterval(loadingInterval);
+
+    // Add the fadeOut class to the loader
+    loader.classList.add('fadeOut');
+
+    // Remove the loader after the animation has completed
+    setTimeout(() => {
+      loader.parentNode.removeChild(loader);
+    }, 1000); // The duration of the animation in milliseconds
+  }
+
+}, 20);
 
 // ===============================> End of Loading Page <===================================//
 
